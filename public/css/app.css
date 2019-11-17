@@ -1,0 +1,337 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  height: 100%;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100%;
+  height: 100px;
+  background: whitesmoke;
+  margin-top: 0;
+}
+
+header div {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px 0 20px;
+}
+
+header h3 {
+  margin-top: 30px;
+}
+
+header h3 a {
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header h3 a:hover {
+  color: lightslategrey;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-decoration: none;
+  text-shadow: 7px 5px 7px silver;
+}
+
+header p {
+  margin-top: 32px;
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+header ul {
+  margin: 35px 0 30px 0;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header li a {
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header li a:hover {
+  color: lightslategrey;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-decoration: none;
+  text-shadow: 7px 5px 7px silver;
+}
+
+header .menuPC {
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 10px 0 10px;
+}
+
+header .forMenuPhoneSlip {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  display: none;
+}
+
+header #buttonOpenMenu {
+  display: none;
+}
+
+header .nonOpacity {
+  display: none;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+#center {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding-bottom: 90px;
+  max-width: 2500px;
+  background: #0c5460;
+}
+
+footer {
+  height: auto;
+  background: lightslategrey;
+}
+
+footer .firstBlock {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+footer .firstBlock i {
+  font-size: 18px;
+  margin-top: 9px;
+  color: #bbdaff;
+}
+
+footer .firstBlock p {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+  color: #bbdaff;
+}
+
+footer .secondBlock {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+footer .secondBlock div {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+}
+
+footer .secondBlock div a {
+  color: #23272b;
+}
+
+footer .secondBlock div i {
+  margin-top: 20px;
+  font-size: 27px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer .secondBlock div .tel:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 28px;
+  color: deepskyblue;
+  text-shadow: 0px 6px 2px black;
+}
+
+footer .secondBlock div .inst:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 28px;
+  color: #ff3d4a;
+  text-shadow: 0px 6px 2px black;
+}
+
+footer .secondBlock div .vk:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 28px;
+  color: #3030ff;
+  text-shadow: 0px 6px 2px black;
+}
+
+footer .secondBlock div .wats:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 28px;
+  color: #2dc130;
+  text-shadow: 0px 6px 2px black;
+}
+
+footer .threeBlock {
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+  header p {
+    margin-top: 34px;
+    font-size: 13px;
+  }
+
+  header .menuPC {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  header h3 {
+    margin-top: 36px;
+    font-size: 18px;
+  }
+
+  header p {
+    margin-top: 36px;
+    font-size: 12px;
+  }
+
+  header .menuPC {
+    font-size: 11px;
+    margin: 0 5px 0 5px;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  header p {
+    display: none;
+  }
+
+  header .menuPC {
+    display: none;
+  }
+
+  header #buttonOpenMenu {
+    cursor: pointer;
+    margin-top: 36px;
+    display: block;
+  }
+
+  header .nonOpacity {
+    display: block;
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: 1;
+  }
+
+  header .nonOpacity p {
+    display: block;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  header .nonOpacity ul {
+    margin: 5px 0 0 0;
+    padding-left: 20px;
+  }
+
+  header .nonOpacity li {
+    margin: 7px 0 7px 0;
+  }
+}
+
+@media screen and (max-width: 877px) and (max-width: 360px) {
+  footer .firstBlock i {
+    font-size: 15px;
+  }
+
+  footer .firstBlock p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 877px) {
+  .HeaderPhone {
+    z-index: 2;
+    -webkit-transition: 1s;
+    transition: 1s;
+    height: 300px;
+  }
+
+  .forMenuPhoneOpacity {
+    opacity: 0;
+    display: block;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+}
+
+.bodyAdmin {
+  background: linear-gradient(153deg, #eeaeca 28%, #94bbe9 100%);
+  height: 100%;
+  width: 100%;
+}
+
+.bodyAdmin .log {
+  margin-top: 150px;
+}
+
+.navMA li {
+  margin: 10px;
+}
+
+.navMA a {
+  padding: 0;
+}
+
+.formModels .inf {
+  border-bottom: 1px black solid;
+  margin: 10px;
+  width: 400px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.formModels .allPhoto {
+  border-bottom: 1px black solid;
+  margin: 10px;
+  width: 400px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.formModels .allPhoto label {
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .formModels div {
+    margin: 5px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .formModels div {
+    margin: 0;
+    width: 250px;
+  }
+}
+
