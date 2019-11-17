@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <h1 class="text-center">{{$model->name}}</h1>
             <div class="col-md-7 col-sm-12">
-
+                <img class="img-fluid" src="{{ asset('/storage/' .  $model->main_photo )}}">
             </div>
             <div class="col-md-5 col-sm-12">
                 <div>
