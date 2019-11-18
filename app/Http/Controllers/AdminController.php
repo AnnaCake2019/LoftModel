@@ -23,12 +23,12 @@ class AdminController extends Controller
     {
         $this->validate($request, [
             'main_photo' => 'required ',
-//            'one_photo' => 'required',
-//            'two_photo' => 'required',
-//            'three_photo' => 'required',
-//            'four_photo' => 'required',
-//            'five_photo' => 'required',
-//            'six_photo' => 'required',
+            'one_photo' => 'required',
+            'two_photo' => 'required',
+            'three_photo' => 'required',
+            'four_photo' => 'required',
+            'five_photo' => 'required',
+            'six_photo' => 'required',
             'name' => 'required',
             'age' => 'required',
             'height' => 'required',
@@ -40,13 +40,22 @@ class AdminController extends Controller
         ]);
 
         $path = $request->file('main_photo')->store('uploads', 'public');
+        $path1 = $request->file('one_photo')->store('uploads', 'public');
+        $path2 = $request->file('two_photo')->store('uploads', 'public');
+        $path3 = $request->file('three_photo')->store('uploads', 'public');
+        $path4 = $request->file('four_photo')->store('uploads', 'public');
+        $path5 = $request->file('five_photo')->store('uploads', 'public');
+        $path6 = $request->file('six_photo')->store('uploads', 'public');
+
+
         $main_photo = $path;
-//        $one_photo = $request->post('one_photo');
-//        $two_photo = $request->post('two_photo');
-//        $three_photo = $request->post('three_photo');
-//        $four_photo = $request->post('four_photo');
-//        $five_photo = $request->post('five_photo');
-//        $six_photo = $request->post('six_photo');
+        $one_photo = $path1;
+        $two_photo = $path2;
+        $three_photo = $path3;
+        $four_photo = $path4;
+        $five_photo= $path5;
+        $six_photo = $path6;
+
         $name = $request->post('name');
         $age = $request->post('age');
         $height = $request->post('height');
@@ -61,12 +70,12 @@ class AdminController extends Controller
         DB::table('models')->insert(
             [
                 'main_photo' => $main_photo,
-//                'one_photo' => $one_photo,
-//                'two_photo' => $two_photo,
-//                'three_photo' => $three_photo,
-//                'four_photo' => $four_photo,
-//                'five_photo' => $five_photo,
-//                'six_photo' => $six_photo,
+                'one_photo' => $one_photo,
+                'two_photo' => $two_photo,
+                'three_photo' => $three_photo,
+                'four_photo' => $four_photo,
+                'five_photo' => $five_photo,
+                'six_photo' => $six_photo,
                 'name' => $name,
                 'age' => $age,
                 'height' => $height,

@@ -16,12 +16,12 @@ class CreateModelsTable extends Migration
         Schema::create('models', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('main_photo');
-//            $table->string('one_photo');
-//            $table->string('two_photo');
-//            $table->string('three_photo');
-//            $table->string('four_photo');
-//            $table->string('five_photo');
-//            $table->string('six_photo');
+            $table->string('one_photo');
+            $table->string('two_photo');
+            $table->string('three_photo');
+            $table->string('four_photo');
+            $table->string('five_photo');
+            $table->string('six_photo');
             $table->text('name');
             $table->integer('age');
             $table->integer('height');

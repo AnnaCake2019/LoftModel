@@ -16,14 +16,14 @@
                     @endif
                     @csrf
                     <div class="inf"><label>Главное фото</label><input name="main_photo" type="file"></div>
-{{--                    <div class="allPhoto">--}}
-{{--                        <label>Фото 1<input name="one_photo" type="file"></label>--}}
-{{--                        <label>Фото 2<input name="two_photo" type="file"></label>--}}
-{{--                        <label>Фото 3<input name="three_photo" type="file"></label>--}}
-{{--                        <label>Фото 4<input name="four_photo" type="file"></label>--}}
-{{--                        <label>Фото 5<input name="five_photo" type="file"></label>--}}
-{{--                        <label>Фото 6<input name="six_photo" type="file"></label>--}}
-{{--                    </div>--}}
+                    <div class="allPhoto">
+                        <label>Фото 1<input name="one_photo" type="file"></label>
+                        <label>Фото 2<input name="two_photo" type="file"></label>
+                        <label>Фото 3<input name="three_photo" type="file"></label>
+                        <label>Фото 4<input name="four_photo" type="file"></label>
+                        <label>Фото 5<input name="five_photo" type="file"></label>
+                        <label>Фото 6<input name="six_photo" type="file"></label>
+                    </div>
                     <div class="inf"><label>Имя</label><input name="name" type="text"></div>
                     <div class="inf"><libel>Лет</libel><input name="age" type="text"></div>
                     <div class="inf"><libel>Рост</libel><input name="height" type="text"></div>
