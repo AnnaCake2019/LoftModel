@@ -40,4 +40,5 @@
             </div>
         </div>
     </div>
+    <script src="/public/js/admin/app.js"></script>
 @endsection

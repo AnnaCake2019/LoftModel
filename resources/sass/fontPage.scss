@@ -1,0 +1,20 @@
+.font_page{
+    position: relative;
+    z-index: 1;
+    background: url("/public/images/picFront.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    div{
+
+        color: white;
+        font-size: 3rem;
+        .font_page_one{
+        }
+        .font_page_two{
+
+            font-size: 5rem;
+        }
+    }
+}

@@ -12,6 +12,6 @@
 </head>
 <body class="bodyAdmin">
 @yield('content')
-<script src="/public/js/admin/app.js"></script>
+
 </body>
 </html>

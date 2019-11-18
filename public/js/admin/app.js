@@ -90,10 +90,25 @@
 /*!***********************************!*\
   !*** ./resources/js/admin/app.js ***!
   \***********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _crop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./crop */ "./resources/js/admin/crop.js");
+/* harmony import */ var _crop__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_crop__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/***/ }),
+
+/***/ "./resources/js/admin/crop.js":
+/*!************************************!*\
+  !*** ./resources/js/admin/crop.js ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-console.log('hi');
+console.log('hello world');
 
 /***/ }),
 

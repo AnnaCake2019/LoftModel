@@ -1,11 +1,20 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Oswald', sans-serif;
   height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
 }
 
 header {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   -webkit-transition: 1s;
   transition: 1s;
   width: 100%;
@@ -89,16 +98,11 @@ header .nonOpacity {
   display: none;
 }
 
-.wrapper {
-  height: 100%;
-}
-
 #center {
-  box-sizing: border-box;
-  min-height: 100%;
-  padding-bottom: 90px;
-  max-width: 2500px;
-  background: #0c5460;
+  margin: 1px;
+  z-index: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
 }
 
 footer {
@@ -264,7 +268,7 @@ footer .threeBlock {
 
 @media screen and (max-width: 877px) {
   .HeaderPhone {
-    z-index: 2;
+    z-index: 5;
     -webkit-transition: 1s;
     transition: 1s;
     height: 300px;
@@ -333,5 +337,24 @@ footer .threeBlock {
     margin: 0;
     width: 250px;
   }
+}
+
+.font_page {
+  position: relative;
+  z-index: 1;
+  background: url("/public/images/picFront.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.font_page div {
+  color: white;
+  font-size: 3rem;
+}
+
+.font_page div .font_page_two {
+  font-size: 5rem;
 }
 

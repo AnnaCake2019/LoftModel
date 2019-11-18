@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Faker\Provider\Image;
+use Faker\Provider\Image as Image;
 use Illuminate\Http\Request;
 use DB;
 class AdminController extends Controller
@@ -40,8 +40,6 @@ class AdminController extends Controller
         ]);
 
         $path = $request->file('main_photo')->store('uploads', 'public');
-
-
         $main_photo = $path;
 //        $one_photo = $request->post('one_photo');
 //        $two_photo = $request->post('two_photo');
