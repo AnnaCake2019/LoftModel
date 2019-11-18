@@ -46,6 +46,10 @@
         </ul>
     </div>
 </header>
+</div>
+
+
+<div class="wra">
 <div id="center">
     @yield('content')
 </div>
@@ -83,6 +87,7 @@
         </div>
     </div>
 </footer>
+</div>
 <script src="/public/js/app.js"></script>
 </body>
 </html>

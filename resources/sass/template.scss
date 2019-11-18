@@ -1,4 +1,4 @@
-$shadowIcon: 0px 6px 2px black;
+$shadowIcon: 0px 4px 2px black;
 
 html{
     height: 100%;
@@ -9,8 +9,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 header{
-    position: relative;
+    position: absolute;
     z-index: 5;
     transition: 1s;
     width: 100%;
@@ -83,8 +84,13 @@ header{
 
 }
 
+.wra {
+    display: flex;
+    margin: 100px 0 0 0;
+    flex-direction: column;
+    height: 100%;
+}
 #center{
-    margin: 1px;
     z-index: 1;
     flex-grow: 1;
 }

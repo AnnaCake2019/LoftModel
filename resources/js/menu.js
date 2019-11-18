@@ -13,7 +13,7 @@ function open() {
         fonMenu.classList.toggle('nonOpacity')
     }
     else {
-        setTimeout(change, 350);
+        setTimeout(change, 450);
     }
 
 }
