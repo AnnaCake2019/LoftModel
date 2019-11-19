@@ -20,6 +20,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "croppie": "^2.6.4",
         "node-sass": "^4.13.0",
         "uikit": "^3.2.3"
     }

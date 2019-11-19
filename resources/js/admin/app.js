@@ -1,1 +1,2 @@
-import './crop'
+import "./forPhoto"
+

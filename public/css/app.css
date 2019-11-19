@@ -210,7 +210,7 @@ footer .threeBlock {
   }
 }
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1040px) {
   header h3 {
     margin-top: 36px;
     font-size: 18px;
@@ -351,10 +351,9 @@ footer .threeBlock {
 .font_page {
   z-index: 1;
   height: 100%;
-  background: url("/public/images/picFront.jpg");
+  background: url("/public/images/bianca-balti-byanka-balti-1895.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
   background-attachment: fixed;
   -webkit-box-align: center;
           align-items: center;
@@ -370,5 +369,206 @@ footer .threeBlock {
 
 .font_page div .font_page_two {
   font-size: 5rem;
+}
+
+.downBlock {
+  margin-top: 150px;
+  opacity: 0.5;
+}
+
+.upBlock {
+  opacity: 1;
+  margin-top: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.title_models {
+  text-align: center;
+}
+
+.cont_for_models {
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.cont_for_models .link_model {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.cont_for_models .link_model:hover {
+  color: lightslategrey;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-decoration: none;
+  text-shadow: 7px 5px 7px silver;
+}
+
+.cont_for_model {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  margin: 5px auto;
+}
+
+.cont_for_model:hover img {
+  opacity: 0.5;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.cont_for_model:hover .info_model {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: white;
+}
+
+.cont_for_model .info_model {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: black;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.cont_for_model .info_model p {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.cont_for_model img {
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 994px) {
+  .cont_for_model {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 5px auto;
+  }
+
+  .cont_for_model:hover img {
+    opacity: 0.5;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+
+  .cont_for_model:hover .info_model {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: white;
+  }
+
+  .cont_for_model .info_model {
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: black;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .cont_for_model .info_model p {
+    margin-top: 20px;
+    font-size: 17px;
+  }
+
+  .cont_for_model img {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cont_for_model {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: 5px auto;
+  }
+
+  .cont_for_model:hover img {
+    opacity: 0.5;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+
+  .cont_for_model:hover .info_model {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: white;
+    font-size: 17px;
+  }
+
+  .cont_for_model .info_model {
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: black;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .cont_for_model .info_model p {
+    margin-top: 20px;
+  }
+
+  .cont_for_model img {
+    -webkit-transition: 1s;
+    transition: 1s;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 

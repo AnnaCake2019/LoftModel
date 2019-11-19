@@ -95,6 +95,7 @@ header{
     flex-grow: 1;
 }
 footer{
+    //margin-top: 15px;
     height: auto;
     background: lightslategrey;
     .firstBlock {
@@ -182,7 +183,7 @@ footer{
         }
     }
 }
-@media screen and (max-width: 1022px){
+@media screen and (max-width: 1040px){
     header{
         h3{
             margin-top: 36px;

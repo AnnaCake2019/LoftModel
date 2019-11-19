@@ -15,7 +15,7 @@
                         </div>
                     @endif
                     @csrf
-                    <div class="inf"><label>Главное фото</label><input name="main_photo" type="file"></div>
+                    <div class="inf"><label>Главное фото</label><input name="main_photo" id="oneFile" type="file"></div>
                     <div class="allPhoto">
                         <label>Фото 1<input name="one_photo" type="file"></label>
                         <label>Фото 2<input name="two_photo" type="file"></label>
