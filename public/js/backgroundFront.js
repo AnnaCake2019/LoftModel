@@ -81,37 +81,36 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/appModel.js":
-/*!**********************************!*\
-  !*** ./resources/js/appModel.js ***!
-  \**********************************/
+/***/ "./resources/js/backgroundFront.js":
+/*!*****************************************!*\
+  !*** ./resources/js/backgroundFront.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var up = document.getElementById('upBlock');
-console.log(up);
-setTimeout(start, 100);
+var becFront = document.getElementById('becFront');
+setTimeout(opec, 100);
 
-function start() {
-  up.classList.remove('downBlock');
-  up.classList.add('upBlock');
+function opec() {
+  becFront.classList.remove('opacityBec');
+  becFront.classList.add('opacityBecNon');
 }
 
 /***/ }),
 
-/***/ 1:
-/*!****************************************!*\
-  !*** multi ./resources/js/appModel.js ***!
-  \****************************************/
+/***/ 2:
+/*!***********************************************!*\
+  !*** multi ./resources/js/backgroundFront.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\appModel.js */"./resources/js/appModel.js");
+module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\backgroundFront.js */"./resources/js/backgroundFront.js");
 
 
 /***/ })

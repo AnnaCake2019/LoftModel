@@ -81,37 +81,45 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/appModel.js":
-/*!**********************************!*\
-  !*** ./resources/js/appModel.js ***!
-  \**********************************/
+/***/ "./resources/js/modelWindow.js":
+/*!*************************************!*\
+  !*** ./resources/js/modelWindow.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var up = document.getElementById('upBlock');
-console.log(up);
-setTimeout(start, 100);
+var buttonOW = document.getElementById('buttonOW');
+var modWin = document.getElementById('modWin');
+var serv = document.getElementById('serv');
+buttonOW.addEventListener('click', workWindow);
 
-function start() {
-  up.classList.remove('downBlock');
-  up.classList.add('upBlock');
+function workWindow(e) {
+  modWin.classList.remove('disNonWin');
+  modWin.classList.add('disOpeWin');
+}
+
+setTimeout(servUP, 100);
+
+function servUP() {
+  serv.classList.remove('servDown');
+  serv.classList.add('servUp');
 }
 
 /***/ }),
 
-/***/ 1:
-/*!****************************************!*\
-  !*** multi ./resources/js/appModel.js ***!
-  \****************************************/
+/***/ 3:
+/*!*******************************************!*\
+  !*** multi ./resources/js/modelWindow.js ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\appModel.js */"./resources/js/appModel.js");
+module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\modelWindow.js */"./resources/js/modelWindow.js");
 
 
 /***/ })
