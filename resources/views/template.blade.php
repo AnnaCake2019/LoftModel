@@ -10,7 +10,6 @@
           integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b86eb20c1d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/public/css/app.css">
-    <script src="/resources/js/admin/croppie.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <title>Loft Model</title>
 </head>

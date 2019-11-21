@@ -1,0 +1,25 @@
+.del{
+    color: black;
+    font-size: 1.5rem;
+    position: relative;
+    right: 7px;
+    text-decoration: none;
+    transition: 1s;
+    &:hover{
+        color: #4f424c;
+        transition: 1s;
+    }
+}
+.back{
+    color: black;
+    font-size: 2rem;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    transition: 1s;
+    &:hover{
+    color: #4f424c;
+    transition: 1s;
+}
+}

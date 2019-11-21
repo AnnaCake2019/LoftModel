@@ -14,6 +14,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="admin/modelsAV">Hall Vip Models</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="album" href="admin/albumA">Album</a>
+                    </li>
                 </ul>
             </div>
         </div>

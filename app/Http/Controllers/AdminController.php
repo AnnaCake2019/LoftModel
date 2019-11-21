@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Faker\Provider\Image as Image;
 use Illuminate\Http\Request;
-use DB;
+use Illuminate\Support\Facades\DB;
+
+
 class AdminController extends Controller
 {
     public function menu(){
@@ -12,7 +14,20 @@ class AdminController extends Controller
     }
 
     public function modelsA(){
+
         return view('admin.modelsA');
+    }
+
+    public function albumA()
+    {
+        $models = DB::table('models')->get();
+        return view('admin.albumA', compact('models'));
+    }
+
+    public function destroy($id) {
+        DB::delete('delete from `models` where id = ?',[$id]);
+        echo "Record deleted successfully.<br/>";
+        echo '<a href="/public/admin/albumA">Click Here</a> to go back.';
     }
 
     public function modelsAV(){

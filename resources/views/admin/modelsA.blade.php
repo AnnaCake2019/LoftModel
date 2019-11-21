@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="offset-3 col-6">
+            <div class="offset-1 col-6">
                 <form class="formModels" action="save" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     @if ($errors->any())
@@ -40,5 +40,6 @@
             </div>
         </div>
     </div>
+    <a id="albumA" href="/public/admin/albumA">Album</a>
     <script src="/public/js/admin/app.js"></script>
 @endsection

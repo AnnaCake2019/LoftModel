@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\DB;
+
 Route::get('/', 'FrontController@index');
 Route::get('/models', 'FrontController@models');
 Route::get('/modelsVip', 'FrontController@modelsVip');
@@ -33,6 +35,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::prefix('admin')->middleware('auth')->group(function (){
     Route::get('/', 'AdminController@menu');
     Route::get('/modelsA', 'AdminController@modelsA');
+    Route::get('/albumA', 'AdminController@albumA');
     Route::get('/modelsAV', 'AdminController@modelsAV');
     Route::post('/save', 'AdminController@update');
+    Route::get('/destroy/{id}','AdminController@destroy');
+//    Route::delete('/delete/{model}', function ($model){
+//
+//             $model;
+//             return redirect('/albumA');
+//    })->name('modelDelete');
 });
+
