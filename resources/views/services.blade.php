@@ -1,40 +1,64 @@
 @extends('template')
 
 @section('content')
+    <div style="display: none">
+        Персонального Онлайн кастинга
+        <p>
+            Для осущ. онлайн кастинга
+            вам необходимо
+            зполнить анкуту для точного подбора
+            модели под ваши станларты!
+        </p>
+
+    </div>
     <div class="container servDown" id="serv">
+{{--    start Modal    --}}
         <div class="disNonWin" id="modWin">
-            <div>
-                <a href="#" title="Telegram"><i class="fab fa-telegram-plane tel"></i></a>
-            </div>
-            <div>
-                <a href="#" title="WhatsApp"><i class="fab fa-whatsapp wats"></i></a>
-            </div>
+            <form>
+                <label>Укажите страну встречи с моделью<input type="text"></label>
+                <label>Укажите город встречи с моделью<input type="text"></label>
+                <label>Дата встречи<input type="date"></label>
+                <label>Колво часов или суток<input type="text"></label>
+                <label>Место встречи
+                <select>
+                    <option value="">Мероприятие</option>
+                    <option value="">Путушуствие</option>
+                    <option value="">Отель</option>
+                </select>
+                </label>
+                <label>цель заказа модели
+                <select>
+                    <option value="">мероприятие</option>
+                    <option value="">Путешествие</option>
+                    <option value="">Отель</option>
+                </select>
+                </label>
+                <label>
+                    укажите примерный бюджет заказа в $
+                    <input type="number">
+                </label>
+                <button type="submit">
+                    отправить
+                </button>
+            </form>
         </div>
+{{--    end Modal    --}}
         <div class="serv">
             <div class="col-md-12">
                 <h1>Loft model</h1>
             </div>
+            <div>
+                <p></p>
+            </div>
             <div class="col-md-12">
                 <div class="ofer_inf">
-                    <p>
-                        Это удобный ресурс для заказа эскорт моделей, под любые назначения и мероприятия.<br/>
-                        В несколько приёмов вы можете выбрать себе спутницу для:<br/>
-                        Встречи на своих условиях.<br/>
-                        Поездок в другие города и страны.<br/>
-                        Организации вечеринок.<br/>
-                        Создания положительной атмосферы любого мероприятия.<br/>
-                        Подбора невесты.<br/>
-                        Переводчицы, и тд . <br/>
-                    </p>
+
                 </div>
                 <div class="ofer_inf">
                     <p>
-                        За 5 лет у нас сформировалась огромная база моделей со всего мира.
-                        Так же мы сотрудничаем с модельными агентствами по всему миру, что очень удобно
-                        для быстрого подбора модели.<br/>
                         Для подбора спутницы есть 2 варианта:<br/>
-                        1. Онлайн кастинг<br/>
-                        2. Выбрать из каталога<br/>
+                        1. Персональный онлайн кастинг<br/>
+                        2. Выбрать модели из каталога<br/>
                         Более подробная информация у администратора
                         <a href="https://wa.me/79190477597?text=%D0%A1%D0%B0%D1%88%D0%B0+%D0%BB%D0%BE%D1%85">
                             WhatsApp

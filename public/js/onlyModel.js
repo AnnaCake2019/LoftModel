@@ -81,45 +81,51 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/admin/app.js":
+/***/ "./resources/js/onlyModel.js":
 /*!***********************************!*\
-  !*** ./resources/js/admin/app.js ***!
+  !*** ./resources/js/onlyModel.js ***!
   \***********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _forPhoto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./forPhoto */ "./resources/js/admin/forPhoto.js");
-/* harmony import */ var _forPhoto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_forPhoto__WEBPACK_IMPORTED_MODULE_0__);
-
-
-/***/ }),
-
-/***/ "./resources/js/admin/forPhoto.js":
-/*!****************************************!*\
-  !*** ./resources/js/admin/forPhoto.js ***!
-  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var imgModel = document.getElementsByClassName('imgModel');
+var contForPhoto = document.getElementById('contForPhotoModel');
+var imgWindow = document.getElementById('imgWindow');
+var arrImg = [];
 
+for (var i = 0; i < imgModel.length; i++) {
+  arrImg.push(imgModel[i].getAttribute('src'));
+}
+
+console.log(arrImg);
+
+for (var q = 0; q < arrImg.length; q++) {
+  arrImg[q].addEventListener('click', openSlider);
+}
+
+function openSlider(e) {
+  console.log(e);
+  imgModel.setAttribute(); // substrate.classList.add('openSubstrate');
+
+  contForPhoto.classList.add('contForImg');
+  document.body.style.overflow = 'hidden';
+}
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*****************************************!*\
-  !*** multi ./resources/js/admin/app.js ***!
+  !*** multi ./resources/js/onlyModel.js ***!
   \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\admin\app.js */"./resources/js/admin/app.js");
+module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\onlyModel.js */"./resources/js/onlyModel.js");
 
 
 /***/ })

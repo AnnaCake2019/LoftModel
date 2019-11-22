@@ -6,7 +6,7 @@
             <div class="offset-1 col-10 title_models">
                 <h3>НАШИ МОДЕЛИ</h3>
             </div>
-            <div class="col-12 downBlock" id="upBlock">
+            <div class="col-12 downBlock " id="upBlock">
                 @foreach($models as $model)
                     <div class=" col-xl-4 col-md-4 col-sm-6 col-xs-12 cont_for_models">
                         <a class="link_model" href="/public/showModel/{{$model->id}}">{{$model->name}}</a>

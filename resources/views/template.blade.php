@@ -8,9 +8,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
           integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://kit.fontawesome.com/b86eb20c1d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/public/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
     <title>Loft Model</title>
 </head>
 <body>
@@ -22,13 +25,13 @@
         </div>
         <nav>
             <ul>
-                <li class="menuPC"><a href="/public/services">Условия Заказа/Order Terms</a></li>
-                <li class="menuPC"><a href="/public/models">Модели/Models</a></li>
-                <li class="menuPC"><a href="/public/modelsVip">Vip Зал/Vip Hall</a></li>
-                <li class="menuPC"><a href="/public/price">Прайс/Price</a></li>
-                <li class="menuPC"><a href="/public/vacancy">Вакансии/Jobs</a></li>
-                <li class="menuPC"><a href="/public/contacts">Контакты/Contact</a></li>
-                <li class="menuPC"><a href="/public/about">О нас/About Us</a></li>
+                <li class="menuPC"><a href="/public/services">Условия Заказа / Order Terms</a></li>
+                <li class="menuPC"><a href="/public/models">Модели / Models</a></li>
+                <li class="menuPC"><a href="/public/modelsVip">Vip Зал / Vip Hall</a></li>
+                <li class="menuPC"><a href="/public/price">Прайс / Price</a></li>
+                <li class="menuPC"><a href="/public/vacancy">Вакансии / Jobs</a></li>
+                <li class="menuPC"><a href="/public/contacts">Контакты / Contact</a></li>
+                <li class="menuPC"><a href="/public/about">О нас / About Us</a></li>
             </ul>
         </nav>
         <span id="buttonOpenMenu" class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>

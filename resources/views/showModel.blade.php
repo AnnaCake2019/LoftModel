@@ -1,6 +1,9 @@
 @extends('template')
 
 @section('content')
+    <div id="contForPhotoModel">
+        <img id='imgWindow' src="">
+    </div>
     <div class="container-fluid">
         <h1 class="text-center">{{$model->name}}</h1>
             <div class="col-md-7 col-sm-12">
@@ -40,27 +43,27 @@
                     <h4 class="col-md-6 col-xs-6">{{$model->followers}}</h4>
                 </div>
                 <div>
-                    <h4 class="col-md-6 col-xs-12">Достижения: </h4>
+                    <h4 class="col-md-6 col-xs-12">Статус: </h4>
                     <h4 class="col-md-6 col-xs-12">{{$model->achievements}}</h4>
                 </div>
                 <div>
                     <div class="col-md-4 col-sm-12">
-                        <img class="img-fluid" src="{{ asset('/storage/' .  $model->one_photo )}}">
+                        <img  class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->one_photo )}}">
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <img class="img-fluid" src="{{ asset('/storage/' .  $model->two_photo )}}">
+                        <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->two_photo )}}">
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <img class="img-fluid" src="{{ asset('/storage/' .  $model->three_photo )}}">
+                        <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->three_photo )}}">
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <img class="img-fluid" src="{{ asset('/storage/' .  $model->four_photo )}}">
+                        <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->four_photo )}}">
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <img class="img-fluid" src="{{ asset('/storage/' .  $model->five_photo )}}">
+                        <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->five_photo )}}">
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <img class="img-fluid" src="{{ asset('/storage/' .  $model->six_photo )}}">
+                        <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->six_photo )}}">
                     </div>
                 </div>
 
@@ -70,4 +73,5 @@
                 </div>
         </div>
     </div>
+    <script src="/public/js/onlyModel.js"></script>
 @endsection

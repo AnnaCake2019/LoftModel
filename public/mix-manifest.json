@@ -4,5 +4,6 @@
     "/css/app.css": "/css/app.css",
     "/js/appModel.js": "/js/appModel.js",
     "/js/backgroundFront.js": "/js/backgroundFront.js",
-    "/js/modelWindow.js": "/js/modelWindow.js"
+    "/js/modelWindow.js": "/js/modelWindow.js",
+    "/js/onlyModel.js": "/js/onlyModel.js"
 }
