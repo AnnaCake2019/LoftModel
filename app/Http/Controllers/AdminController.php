@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Faker\Provider\Image as Image;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
@@ -24,11 +24,33 @@ class AdminController extends Controller
         return view('admin.albumA', compact('models'));
     }
 
-    public function destroy($id) {
+//    public function destroy($id) {
+//        DB::delete('delete from `models` where id = ?',[$id]);
+////        $path = $main_photo;
+////        unlink(public_path('uploads' . $path));
+//        echo "Record deleted successfully.<br/>";
+//        echo '<a href="/public/admin/albumA">Click Here</a> to go back.';
+//    }
+
+
+
+
+    public function delete(Request $request){
+        $id = $request->get('id');
+        $path1 = $request->get('main_photo');
+        $path2 = $request->get('one_photo');
+        $path3 = $request->get('two_photo');
+        $path4 = $request->get('three_photo');
+        $path5 = $request->get('four_photo');
+        $path6 = $request->get('five_photo');
+        $path7 = $request->get('six_photo');
         DB::delete('delete from `models` where id = ?',[$id]);
+        Storage::delete(['/public/' . $path1, '/public/' . $path2, '/public/' . $path3, '/public/' . $path4, '/public/' . $path5, '/public/' . $path6, '/public/' . $path7]);
         echo "Record deleted successfully.<br/>";
         echo '<a href="/public/admin/albumA">Click Here</a> to go back.';
     }
+
+
 
     public function modelsAV(){
         return view('admin.modelsAV');

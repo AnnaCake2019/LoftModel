@@ -38,7 +38,8 @@ Route::prefix('admin')->middleware('auth')->group(function (){
     Route::get('/albumA', 'AdminController@albumA');
     Route::get('/modelsAV', 'AdminController@modelsAV');
     Route::post('/save', 'AdminController@update');
-    Route::get('/destroy/{id}','AdminController@destroy');
+//    Route::get('/destroy/{id}','AdminController@destroy');
+    Route::get('/delete','AdminController@delete');
 //    Route::delete('/delete/{model}', function ($model){
 //
 //             $model;
