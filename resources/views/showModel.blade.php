@@ -2,8 +2,15 @@
 
 @section('content')
     <div id="contForPhotoModel">
+        <i class="fa fa-times-circle noneCloseImg closeImg" id="closeImg" aria-hidden="true"></i>
+        <div class="noneCloseImg" id="backImg">
+        <i class="fa fa-chevron-circle-left"  aria-hidden="true"></i>
+        </div>
         <img id='imgWindow' src="">
-    </div>
+        <div class="noneCloseImg" id="nextImg">
+            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+        </div>
+        </div>
     <div class="container-fluid">
         <h1 class="text-center">{{$model->name}}</h1>
             <div class="col-md-7 col-sm-12">
