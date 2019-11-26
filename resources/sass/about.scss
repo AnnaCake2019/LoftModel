@@ -1,0 +1,22 @@
+.aboutDown{
+    margin-top: 50px;
+    transition: 1s;
+    opacity: 0.5;
+}
+
+.aboutUP{
+    margin-top: 30px;
+    transition: 1s;
+    opacity: 1;
+}
+
+.about{
+    text-align: center;
+    h1{
+        margin-bottom: 40px;
+    }
+    p{
+        font-size: 1.6rem;
+        line-height: 2;
+    }
+}

@@ -19,8 +19,8 @@
 }
 .disOpeWin{
     justify-content: center;
-    height: 200px;
-    width: 300px;
+    height: 600px;
+    width: 400px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -34,6 +34,29 @@
     z-index: 2;
     display: flex;
     transition: 1s;
+
+    .closeServer{
+        position: absolute;
+        z-index: 2;
+        background: white;
+        border-radius: 15px;
+        padding: 2px;
+        right: -5px;
+        top: -5px;
+        font-size: 21px;
+        color: black;
+        box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .2);;
+    }
+
+    form{
+        margin: 10px auto;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+    }
     a{
 
     }
@@ -67,6 +90,19 @@
         align-items: center;
         display: flex;
         justify-content: center;
+
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 1s;
+
+            &:hover {
+                pointer-events: fill;
+                transition: 1s;
+                color: lightslategrey;
+            }
+        }
 
         button{
             margin-top: 20px;

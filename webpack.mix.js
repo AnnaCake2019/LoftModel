@@ -17,6 +17,10 @@ mix.js('resources/js/appModel.js', 'public/js');
 mix.js('resources/js/backgroundFront.js', 'public/js');
 mix.js('resources/js/modelWindow.js', 'public/js');
 mix.js('resources/js/onlyModel.js', 'public/js');
+mix.js('resources/js/contact.js', 'public/js');
+mix.js('resources/js/about.js', 'public/js');
+
+
 
 
 

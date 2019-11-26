@@ -18,6 +18,7 @@
 
     #imgWindow{
         //transition: 1s;
+        opacity: 1;
         position: absolute;
         z-index: 1;
         top: 50%;
@@ -98,3 +99,4 @@
         }
     }
 }
+

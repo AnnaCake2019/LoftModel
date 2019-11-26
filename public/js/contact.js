@@ -81,54 +81,34 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/modelWindow.js":
-/*!*************************************!*\
-  !*** ./resources/js/modelWindow.js ***!
-  \*************************************/
+/***/ "./resources/js/contact.js":
+/*!*********************************!*\
+  !*** ./resources/js/contact.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var serv = document.getElementById('serv');
-setTimeout(servUP, 100);
-
-function servUP() {
-  serv.classList.remove('servDown');
-  serv.classList.add('servUp');
-}
-
-var linkOW = document.getElementById('linkOW');
-var buttonOW = document.getElementById('buttonOW');
-var modWin = document.getElementById('modWin');
-var closeModel = document.getElementById('closeServerWin');
-buttonOW.addEventListener('click', butWindow);
-linkOW.addEventListener('click', butWindow);
-closeModel.addEventListener('click', closeMW);
-
-function butWindow(e) {
-  modWin.classList.remove('disNonWin');
-  modWin.classList.add('disOpeWin');
-}
-
-function closeMW() {
-  modWin.classList.add('disNonWin');
-  modWin.classList.remove('disOpeWin');
-}
+var cont = document.getElementById('cont');
+setTimeout(function () {
+  cont.classList.remove('contDown');
+  cont.classList.add('contUp');
+}, 100);
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************************!*\
-  !*** multi ./resources/js/modelWindow.js ***!
-  \*******************************************/
+/***/ 5:
+/*!***************************************!*\
+  !*** multi ./resources/js/contact.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\modelWindow.js */"./resources/js/modelWindow.js");
+module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\contact.js */"./resources/js/contact.js");
 
 
 /***/ })

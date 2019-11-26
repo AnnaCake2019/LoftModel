@@ -14,32 +14,54 @@
     <div class="container servDown" id="serv">
 {{--    start Modal    --}}
         <div class="disNonWin" id="modWin">
+            <i class="fa fa-times-circle closeServer" id="closeServerWin" aria-hidden="true"></i>
             <form>
-                <label>Укажите страну встречи с моделью<input type="text"></label>
-                <label>Укажите город встречи с моделью<input type="text"></label>
-                <label>Дата встречи<input type="date"></label>
-                <label>Колво часов или суток<input type="text"></label>
-                <label>Место встречи
-                <select>
-                    <option value="">Мероприятие</option>
-                    <option value="">Путушуствие</option>
-                    <option value="">Отель</option>
-                </select>
+                <div>
+                <label>Укажите страну встречи с моделью <br/>
+                    Specify the country of the model
+                </label><input type="text">
+                </div>
+                <div>
+
+                <label>Укажите город встречи с моделью <br/>
+                    Indicate the city of the meeting with the model
                 </label>
-                <label>цель заказа модели
-                <select>
-                    <option value="">мероприятие</option>
-                    <option value="">Путешествие</option>
-                    <option value="">Отель</option>
-                </select>
+                    <input type="text">
+                </div>
+                <div>
+                <label>Дата встречи<br/>
+                       Date of meeting
                 </label>
-                <label>
-                    укажите примерный бюджет заказа в $
+                    <input type="date">
+                </div>
+                <div>
+                    <label>Колво часов или суток <br/>
+                        Hours or days
+                    </label>
+                    <input type="text">
+                </div>
+                <div>
+                <label>Место встречи<br/>
+                    Meeting point
+                </label>
+                <select>
+                    <option value="">Мероприятие / Event</option>
+                    <option value="">Путушуствие / Carriage</option>
+                    <option value="">Отель / Hotel</option>
+                </select>
+                </div>
+                <div>
+                <label>укажите примерный бюджет заказа в $ <br/>
+                    Indicate approximate order budget in $
+                </label>
                     <input type="number">
-                </label>
+
+                </div>
+                <div>
                 <button type="submit">
                     отправить
                 </button>
+                </div>
             </form>
         </div>
 {{--    end Modal    --}}
@@ -57,8 +79,8 @@
                 <div class="ofer_inf">
                     <p>
                         Для подбора спутницы есть 2 варианта:<br/>
-                        1. Персональный онлайн кастинг<br/>
-                        2. Выбрать модели из каталога<br/>
+                        1. <a id="linkOW" href="#">Персональный онлайн кастинг</a><br/>
+                        2. <a href="/public/models">Выбрать модели из каталога</a><br/>
                         Более подробная информация у администратора
                         <a href="https://wa.me/79190477597?text=%D0%A1%D0%B0%D1%88%D0%B0+%D0%BB%D0%BE%D1%85">
                             WhatsApp

@@ -1,9 +1,11 @@
 {
+    "/js/about.js": "/js/about.js",
     "/js/admin/app.js": "/js/admin/app.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/js/appModel.js": "/js/appModel.js",
     "/js/backgroundFront.js": "/js/backgroundFront.js",
+    "/js/contact.js": "/js/contact.js",
     "/js/modelWindow.js": "/js/modelWindow.js",
     "/js/onlyModel.js": "/js/onlyModel.js"
 }
