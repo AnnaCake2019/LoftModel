@@ -82,7 +82,7 @@
     }
     p{
         font-size: 1.6rem;
-        text-align: center;
+        //text-align: center;
         line-height: 2;
     }
     .ofer_inf{
@@ -119,5 +119,23 @@
                 transition: 1s;
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    .disOpeWin {
+        height: 550px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-height: 500px){
+    .font_page div{
+        top: 50px;
+    }
+    .disOpeWin {
+        overflow: hidden;
     }
 }
