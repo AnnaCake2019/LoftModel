@@ -41,7 +41,7 @@
         transition: 1s;
     }
     &:hover .info_model{
-        background-color: rgba(black , 0.4);
+        background-color: rgba(black , 0.6);
         opacity: 1;
         transition: 1s;
         color: white;
@@ -55,7 +55,7 @@
         opacity: 0;
         position: absolute;
         z-index: 2;
-        p{
+        .inf_about{
             margin-top: 20px;
             font-size: 17px;
         }
@@ -91,7 +91,7 @@
             transition: 1s;
         }
         &:hover .info_model{
-            background-color: rgba(black , 0.4);
+            background-color: rgba(black , 0.6);
             opacity: 1;
             transition: 1s;
             color: white;
@@ -105,10 +105,10 @@
             opacity: 0;
             position: absolute;
             z-index: 2;
-            p{
-                margin-top: 20px;
-                font-size: 17px;
-            }
+            //p{
+            //    margin-top: 20px;
+                //font-size: 17px;
+            //}
 
         }
 
@@ -131,8 +131,8 @@
     .cont_for_model{
         position: relative;
         overflow: hidden;
-        width: 300px;
-        height: 300px;
+        width: 100px;
+        height: 100px;
         margin: 5px auto;
         //transition: 1s;
 
@@ -141,23 +141,24 @@
             transition: 1s;
         }
         &:hover .info_model{
-            background-color: rgba(black , 0.4);
+            background-color: rgba(black , 0.6);
             opacity: 1;
             transition: 1s;
             color: white;
-            font-size: 17px;
+            font-size: 10px;
         }
 
         .info_model{
             transition: 1s;
             color: black;
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
             opacity: 0;
             position: absolute;
             z-index: 2;
-            p{
-                margin-top: 20px;
+            .inf_about{
+                margin-top: 10px;
+                font-size: 10px;
             }
 
         }
@@ -169,8 +170,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 300px;
-            height: 300px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
         }
 
