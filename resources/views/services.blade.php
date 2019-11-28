@@ -15,52 +15,55 @@
 {{--    start Modal    --}}
         <div class="disNonWin" id="modWin">
             <i class="fa fa-times-circle closeServer" id="closeServerWin" aria-hidden="true"></i>
-            <form>
+            <form action="#" method="post" name="services">
                 <div>
-                <label>Укажите страну встречи с моделью <br/>
-                    Specify the country of the model
-                </label><input type="text">
+                    <label>Укажите страну встречи с моделью <br/>
+                        Specify the country of the model
+                    </label><input required
+                                   placeholder="Страна / Country" maxlength="10" id="Country" type="text">
                 </div>
                 <div>
 
-                <label>Укажите город встречи с моделью <br/>
-                    Indicate the city of the meeting with the model
-                </label>
-                    <input type="text">
-                </div>
-                <div>
-                <label>Дата встречи<br/>
-                       Date of meeting
-                </label>
-                    <input type="date">
-                </div>
-                <div>
-                    <label>Колво часов или суток <br/>
-                        Hours or days
+                    <label>Укажите город встречи с моделью <br/>
+                        Indicate the city of the meeting with the model
                     </label>
-                    <input type="text">
+                    <input required
+                           placeholder="Город / City" maxlength="20" id="City" type="text">
                 </div>
                 <div>
-                <label>Место встречи<br/>
-                    Meeting point
-                </label>
-                <select>
-                    <option value="">Мероприятие / Event</option>
-                    <option value="">Путушуствие / Carriage</option>
-                    <option value="">Отель / Hotel</option>
-                </select>
+                    <label>Дата встречи<br/>
+                        Date of meeting
+                    </label>
+                    <input required
+                           placeholder="Дата / Date" id="Date" type="date">
                 </div>
                 <div>
-                <label>укажите примерный бюджет заказа в $ <br/>
-                    Indicate approximate order budget in $
-                </label>
-                    <input type="number">
+                    <label>Количество часов<br/>
+                        Hours
+                    </label>
+                    <input placeholder="Часов / Hours" id="Hours" type="number">
+                </div>
+                <div>
+                    <label>Место встречи<br/>
+                        Meeting point
+                    </label>
+                    <select id="Meeting">
+                        <option value="Event">Мероприятие / Event</option>
+                        <option value="Carriage">Путушуствие / Carriage</option>
+                        <option value="Hotel">Отель / Hotel</option>
+                    </select>
+                </div>
+                <div>
+                    <label>укажите примерный бюджет заказа в $ <br/>
+                        Indicate approximate order budget in $
+                    </label>
+                    <input placeholder="Бюджет / Budget" id="Money" type="number">
 
                 </div>
                 <div>
-                <button type="submit">
-                    отправить
-                </button>
+                    <button type="submit">
+                        отправить
+                    </button>
                 </div>
             </form>
         </div>
@@ -72,10 +75,7 @@
             <div>
                 <p></p>
             </div>
-            <div class="col-md-12">
-                <div class="ofer_inf">
-
-                </div>
+            <div class="offset-1 col-md-10">
                 <div class="ofer_inf">
                     <p>
                         Для подбора спутницы есть 2 варианта:<br/>
@@ -90,6 +90,7 @@
                     </p>
                 </div>
                 <div class="ofer_inf">
+
                     <p>
                         Как осуществляется оплата:<br/>
                         Определяемся с выбором Модели , осуществляется первая встреча . Оплата происходит сразу перед
@@ -114,4 +115,5 @@
        </div>
    </div>
     <script src="/public/js/modelWindow.js"></script>
+    <script src="/public/js/services.js"></script>
 @endsection

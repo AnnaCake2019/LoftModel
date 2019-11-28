@@ -1,0 +1,29 @@
+.vacancy{
+    div{
+        display: flex;
+        justify-content: center;
+
+        a{
+            font-size: 1.8rem;
+            color: black;
+            margin: 20px;
+            text-decoration: none;
+            transition: 1s;
+
+            &:hover{
+                color: lightslategrey;
+                transition: 1s;
+                text-shadow: 7px 5px 7px silver;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px){
+       .vacancy{
+           div{
+               text-align: center;
+               flex-direction: column;
+           }
+       }
+}

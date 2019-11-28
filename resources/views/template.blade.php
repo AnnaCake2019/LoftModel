@@ -12,8 +12,9 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://kit.fontawesome.com/b86eb20c1d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/public/css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
+{{--    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">--}}
+{{--    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">--}}
+    <link href="https://fonts.googleapis.com/css?family=Oranienbaum&display=swap" rel="stylesheet">
     <title>Loft Model</title>
 </head>
 <body>

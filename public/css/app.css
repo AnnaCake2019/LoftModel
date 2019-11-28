@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oranienbaum', sans-serif;
   height: 100%;
   display: -webkit-box;
   display: flex;
@@ -57,6 +57,11 @@ header p {
 
 header ul {
   margin: 35px 0 30px 0;
+}
+
+header ul a {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 header li {
@@ -200,6 +205,10 @@ footer .threeBlock {
 }
 
 @media screen and (max-width: 1100px) {
+  header ul a {
+    font-size: 10px;
+  }
+
   header p {
     margin-top: 34px;
     font-size: 13px;
@@ -210,10 +219,14 @@ footer .threeBlock {
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1080px) {
   header h3 {
     margin-top: 36px;
     font-size: 18px;
+  }
+
+  header ul a {
+    font-size: 9px;
   }
 
   header p {
@@ -258,6 +271,10 @@ footer .threeBlock {
   header .nonOpacity ul {
     margin: 5px 0 0 0;
     padding-left: 20px;
+  }
+
+  header .nonOpacity ul a {
+    font-size: 14px;
   }
 
   header .nonOpacity li {
@@ -629,6 +646,10 @@ footer .threeBlock {
   transition: 1s;
 }
 
+.error {
+  border: 1px red solid;
+}
+
 .disNonWin {
   -webkit-box-pack: center;
           justify-content: center;
@@ -723,7 +744,7 @@ footer .threeBlock {
 }
 
 .serv p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2;
 }
 
@@ -995,16 +1016,45 @@ footer .threeBlock {
   opacity: 1;
 }
 
-.about {
-  text-align: center;
-}
-
 .about h1 {
+  text-align: center;
   margin-bottom: 40px;
 }
 
 .about p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2;
+}
+
+.vacancy div {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.vacancy div a {
+  font-size: 1.8rem;
+  color: black;
+  margin: 20px;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.vacancy div a:hover {
+  color: lightslategrey;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-shadow: 7px 5px 7px silver;
+}
+
+@media screen and (max-width: 770px) {
+  .vacancy div {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
 }
 

@@ -81,45 +81,69 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/admin/app.js":
-/*!***********************************!*\
-  !*** ./resources/js/admin/app.js ***!
-  \***********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _forPhoto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./forPhoto */ "./resources/js/admin/forPhoto.js");
-/* harmony import */ var _forPhoto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_forPhoto__WEBPACK_IMPORTED_MODULE_0__);
-
-
-/***/ }),
-
-/***/ "./resources/js/admin/forPhoto.js":
-/*!****************************************!*\
-  !*** ./resources/js/admin/forPhoto.js ***!
-  \****************************************/
+/***/ "./resources/js/services.js":
+/*!**********************************!*\
+  !*** ./resources/js/services.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var servForm = document.forms.services;
+var country = document.getElementById('Country');
+var city = document.getElementById('City');
+var date = document.getElementById('Date');
+var meeting = document.getElementById('Meeting');
+var hours = document.getElementById('Hours');
+var money = document.getElementById('Money');
+var arr = [];
+servForm.addEventListener('submit', sendInfo);
+var validFirstTwo = new RegExp(/[A-zА-яЁё]{3,20}$/);
+var validHours = new RegExp(/^(\d){0,3}$/g);
+var validMoney = new RegExp(/^(\d){0,7}$/g);
 
+function sendInfo(e) {
+  e.preventDefault();
+
+  if (!validFirstTwo.test(country.value)) {
+    country.classList.add('error');
+    return;
+  }
+
+  if (!validFirstTwo.test(city.value)) {
+    city.classList.add('error');
+    return;
+  }
+
+  if (!validHours.test(hours.value)) {
+    hours.classList.add('error');
+    return;
+  }
+
+  if (!validMoney.test(money.value)) {
+    money.classList.add('error');
+    return;
+  } else {
+    arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
+  }
+
+  console.log(arr);
+}
 
 /***/ }),
 
-/***/ 8:
-/*!*****************************************!*\
-  !*** multi ./resources/js/admin/app.js ***!
-  \*****************************************/
+/***/ 7:
+/*!****************************************!*\
+  !*** multi ./resources/js/services.js ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\admin\app.js */"./resources/js/admin/app.js");
+module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\services.js */"./resources/js/services.js");
 
 
 /***/ })

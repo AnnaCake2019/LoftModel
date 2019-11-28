@@ -46,7 +46,7 @@
                     <h4 class="col-md-6 col-xs-6">{{$model->country}}</h4>
                 </div>
                 <div>
-                    <h4 class="col-md-6 col-xs-6">Количество подписчиков: </h4>
+                    <h4 class="col-md-6 col-xs-6">Количество подписчиков в Instagram: </h4>
                     <h4 class="col-md-6 col-xs-6">{{$model->followers}}</h4>
                 </div>
                 <div>

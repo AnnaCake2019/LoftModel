@@ -7,5 +7,6 @@
     "/js/backgroundFront.js": "/js/backgroundFront.js",
     "/js/contact.js": "/js/contact.js",
     "/js/modelWindow.js": "/js/modelWindow.js",
-    "/js/onlyModel.js": "/js/onlyModel.js"
+    "/js/onlyModel.js": "/js/onlyModel.js",
+    "/js/services.js": "/js/services.js"
 }
