@@ -60,12 +60,12 @@ class AdminController extends Controller
     {
         $this->validate($request, [
             'main_photo' => 'required ',
-            'one_photo' => 'required',
-            'two_photo' => 'required',
-            'three_photo' => 'required',
-            'four_photo' => 'required',
-            'five_photo' => 'required',
-            'six_photo' => 'required',
+//            'one_photo' => 'required',
+//            'two_photo' => 'required',
+//            'three_photo' => 'required',
+//            'four_photo' => 'required',
+//            'five_photo' => 'required',
+//            'six_photo' => 'required',
             'name' => 'required',
             'age' => 'required',
             'height' => 'required',
@@ -77,21 +77,7 @@ class AdminController extends Controller
         ]);
 
         $path = $request->file('main_photo')->store('uploads', 'public');
-        $path1 = $request->file('one_photo')->store('uploads', 'public');
-        $path2 = $request->file('two_photo')->store('uploads', 'public');
-        $path3 = $request->file('three_photo')->store('uploads', 'public');
-        $path4 = $request->file('four_photo')->store('uploads', 'public');
-        $path5 = $request->file('five_photo')->store('uploads', 'public');
-        $path6 = $request->file('six_photo')->store('uploads', 'public');
-
-
         $main_photo = $path;
-        $one_photo = $path1;
-        $two_photo = $path2;
-        $three_photo = $path3;
-        $four_photo = $path4;
-        $five_photo= $path5;
-        $six_photo = $path6;
 
         $name = $request->post('name');
         $age = $request->post('age');
@@ -107,12 +93,12 @@ class AdminController extends Controller
         DB::table('models')->insert(
             [
                 'main_photo' => $main_photo,
-                'one_photo' => $one_photo,
-                'two_photo' => $two_photo,
-                'three_photo' => $three_photo,
-                'four_photo' => $four_photo,
-                'five_photo' => $five_photo,
-                'six_photo' => $six_photo,
+//                'one_photo' => $one_photo,
+//                'two_photo' => $two_photo,
+//                'three_photo' => $three_photo,
+//                'four_photo' => $four_photo,
+//                'five_photo' => $five_photo,
+//                'six_photo' => $six_photo,
                 'name' => $name,
                 'age' => $age,
                 'height' => $height,
@@ -126,6 +112,52 @@ class AdminController extends Controller
                 'from_who' => $from_who
             ]
         );
+        if ($request->has('one_photo')){
+            $path1 = $request->file('one_photo')->store('uploads', 'public');
+            $one_photo = $path1;
+            DB::table('models')->update([
+                'one_photo' => $one_photo,
+            ]);
+        }
+        if ($request->has('two_photo')){
+            $path2 = $request->file('two_photo')->store('uploads', 'public');
+            $two_photo = $path2;
+            DB::table('models')->update([
+                'two_photo' => $two_photo,
+            ]);
+        }
+        if ($request->has('three_photo')){
+            $path3 = $request->file('three_photo')->store('uploads', 'public');
+            $three_photo = $path3;
+            DB::table('models')->update([
+                'three_photo' => $three_photo,
+            ]);
+        }
+
+        if ($request->has('four_photo')){
+            $path4 = $request->file('four_photo')->store('uploads', 'public');
+            $four_photo = $path4;
+            DB::table('models')->update([
+                'four_photo' => $four_photo,
+            ]);
+        }
+
+        if ($request->has('five_photo')){
+            $path5 = $request->file('five_photo')->store('uploads', 'public');
+            $five_photo= $path5;
+            DB::table('models')->update([
+                'five_photo' => $five_photo,
+            ]);
+        }
+
+        if ($request->has('six_photo')){
+            $path6 = $request->file('six_photo')->store('uploads', 'public');
+            $six_photo = $path6;
+            DB::table('models')->update([
+                'six_photo' => $six_photo,
+            ]);
+        }
+
         return view('admin.modelsA');
     }
 }

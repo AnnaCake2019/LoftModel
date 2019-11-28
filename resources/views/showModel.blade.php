@@ -54,31 +54,43 @@
                     <h4 class="col-md-6 col-xs-12">{{$model->achievements}}</h4>
                 </div>
                 <div>
+                    @if (isset($model->one_photo))
                     <div class="col-md-4 col-sm-12">
                         <img  class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->one_photo )}}">
                     </div>
+                    @endif
+                    @if (isset($model->two_photo))
                     <div class="col-md-4 col-sm-12">
                         <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->two_photo )}}">
                     </div>
+                        @endif
+                        @if (isset($model->three_photo))
                     <div class="col-md-4 col-sm-12">
                         <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->three_photo )}}">
                     </div>
+                        @endif
+                        @if (isset($model->four_photo))
                     <div class="col-md-4 col-sm-12">
                         <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->four_photo )}}">
                     </div>
+                        @endif
+                        @if (isset($model->five_photo))
                     <div class="col-md-4 col-sm-12">
                         <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->five_photo )}}">
                     </div>
+                        @endif
+                        @if (isset($model->six_photo))
                     <div class="col-md-4 col-sm-12">
                         <img class="img-fluid imgModel" src="{{ asset('/storage/' .  $model->six_photo )}}">
                     </div>
+                        @endif
                 </div>
 
                 <div>
                     <a href="https://wa.me/79190477597?text=%D0%A1%D0%B0%D1%88%D0%B0+%D0%BB%D0%BE%D1%85">Оставить заявку</a> <p></p>
                     <a href="https://t.me/joinchat/AAAAAEa8PaCFFmc9f4EWrA">Telegram</a>
                 </div>
-        </div>
+            </div>
     </div>
     <script src="/public/js/onlyModel.js"></script>
 @endsection
