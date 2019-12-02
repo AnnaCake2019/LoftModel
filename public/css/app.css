@@ -1058,3 +1058,122 @@ footer .threeBlock {
   }
 }
 
+.for_centr {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.nameModel {
+  text-align: center;
+}
+
+.mainPicture {
+  margin-top: 38px;
+  margin-left: 40px;
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 800px;
+}
+
+.mainPicture img {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 600px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.descriptionModel {
+  margin-left: 40px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.descriptionModel div {
+  font-size: 16px;
+  margin-bottom: 5px;
+  width: 260px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  height: 40px;
+}
+
+.descriptionModel .states {
+  border-top: 1px slategray solid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin-bottom: 20px;
+  width: 450px;
+  height: auto;
+}
+
+.descriptionModel .states .state {
+  margin-bottom: 9px;
+  text-align: center;
+}
+
+.collectionPictures {
+  margin-left: 30px;
+}
+
+.collectionPictures div {
+  position: relative;
+  overflow: hidden;
+  width: 110px;
+  height: 110px;
+  margin: 5px;
+}
+
+.collectionPictures div img {
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.collectionPictures div img:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0.7;
+}
+
+.request {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.request a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px black solid;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 18px;
+}
+
+.request a:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 1px lightslategrey solid;
+}
+
