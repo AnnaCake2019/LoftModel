@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row about aboutDown" id="aboutText">
-            <div class="offset-1 col-md-10">
+            <div class="col-md-12">
                 <h1>Loft Model</h1>
                 <p>
                     Это удобный ресурс для заказа эскорт моделей, под любые назначения и мероприятия.<br/>

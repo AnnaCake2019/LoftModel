@@ -1,16 +1,6 @@
 @extends('template')
 
 @section('content')
-    <div style="display: none">
-        Персонального Онлайн кастинга
-        <p>
-            Для осущ. онлайн кастинга
-            вам необходимо
-            зполнить анкуту для точного подбора
-            модели под ваши станларты!
-        </p>
-
-    </div>
     <div class="container servDown" id="serv">
 {{--    start Modal    --}}
         <div class="disNonWin" id="modWin">
@@ -21,6 +11,7 @@
                         Specify the country of the model
                     </label><input required
                                    placeholder="Страна / Country" maxlength="10" id="Country" type="text">
+                    <p class="answerCountry"></p>
                 </div>
                 <div>
 
@@ -29,6 +20,7 @@
                     </label>
                     <input required
                            placeholder="Город / City" maxlength="20" id="City" type="text">
+                    <p class="answerCity"></p>
                 </div>
                 <div>
                     <label>Дата встречи<br/>
@@ -42,6 +34,7 @@
                         Hours
                     </label>
                     <input placeholder="Часов / Hours" id="Hours" type="number">
+                    <p class="answerHours"></p>
                 </div>
                 <div>
                     <label>Место встречи<br/>
@@ -58,10 +51,10 @@
                         Indicate approximate order budget in $
                     </label>
                     <input placeholder="Бюджет / Budget" id="Money" type="number">
-
+                    <p class="answerBudget"></p>
                 </div>
                 <div>
-                    <button type="submit">
+                    <button id="bot" type="submit">
                         отправить
                     </button>
                 </div>
@@ -75,7 +68,7 @@
             <div>
                 <p></p>
             </div>
-            <div class="offset-1 col-md-10">
+            <div class="col-md-12">
                 <div class="ofer_inf">
                     <p>
                         Для подбора спутницы есть 2 варианта:<br/>

@@ -81,89 +81,34 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu */ "./resources/js/menu.js");
-/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_menu__WEBPACK_IMPORTED_MODULE_0__);
- // import 'slick-carousel';
-
-/***/ }),
-
-/***/ "./resources/js/menu.js":
-/*!******************************!*\
-  !*** ./resources/js/menu.js ***!
-  \******************************/
+/***/ "./resources/js/oneModel.js":
+/*!**********************************!*\
+  !*** ./resources/js/oneModel.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
-
-var openMenu = document.getElementById('buttonOpenMenu');
-var fonMenu = document.getElementById('fonMenu');
-var header = document.getElementById('HP');
-var q = 0;
-openMenu.addEventListener('click', open);
-
-function open() {
-  q++;
-  header.classList.toggle('HeaderPhone');
-  fonMenu.classList.toggle('forMenuPhoneSlip');
-  fonMenu.classList.toggle('forMenuPhoneOpacity');
-
-  if (q % 2 == 0) {
-    fonMenu.classList.toggle('forMenuPhoneOpacity');
-    fonMenu.classList.toggle('nonOpacity');
-  } else {
-    setTimeout(change, 450);
-  }
-}
-
-function change() {
-  fonMenu.classList.toggle('forMenuPhoneOpacity');
-  fonMenu.classList.toggle('nonOpacity');
-} //joke
-
 
 setTimeout(function () {
-  setInterval(function () {
-    var dimon = document.getElementById('dimon');
-    var p = document.querySelector('.lox').innerHTML = "Хозяин <br/> Димона!!!";
-    dimon.classList.toggle('neLox');
-  }, 4000);
-}, 600);
+  var blocModel = document.getElementById('contBlock');
+  blocModel.classList.remove('downBlock');
+  blocModel.classList.add('upModel');
+}, 100);
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/***/ 8:
+/*!****************************************!*\
+  !*** multi ./resources/js/oneModel.js ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\oneModel.js */"./resources/js/oneModel.js");
 
 
 /***/ })

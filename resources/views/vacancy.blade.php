@@ -3,8 +3,8 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 vacancy aboutDown" id="aboutText">
-                <div>
+            <div class="col-sm-12 vacancy contDown" id="cont">
+                <div class="vacanc">
                     <h1>Вакансии</h1>
                 </div>
                 <div>
@@ -17,6 +17,6 @@
         </div>
     </div>
 
-    <script src="/public/js/about.js"></script>
+    <script src="/public/js/contact.js"></script>
 @endsection
 

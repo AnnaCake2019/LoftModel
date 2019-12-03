@@ -100,7 +100,10 @@ var date = document.getElementById('Date');
 var meeting = document.getElementById('Meeting');
 var hours = document.getElementById('Hours');
 var money = document.getElementById('Money');
+var answer = document.getElementById('answer');
+var but = document.getElementById('but');
 var arr = [];
+var send;
 servForm.addEventListener('submit', sendInfo);
 var validFirstTwo = new RegExp(/[A-zА-яЁё]{3,20}$/);
 var validHours = new RegExp(/^(\d){0,3}$/g);
@@ -111,27 +114,31 @@ function sendInfo(e) {
 
   if (!validFirstTwo.test(country.value)) {
     country.classList.add('error');
+    document.querySelector('.answerCountry').innerHTML = 'Некорректно указана страна';
     return;
   }
 
   if (!validFirstTwo.test(city.value)) {
     city.classList.add('error');
+    document.querySelector('.answerCity').innerHTML = 'Некорректно указан город';
     return;
   }
 
   if (!validHours.test(hours.value)) {
     hours.classList.add('error');
+    document.querySelector('.answerHours').innerHTML = 'Некорректно указано время';
     return;
   }
 
   if (!validMoney.test(money.value)) {
     money.classList.add('error');
+    document.querySelector('.answerBudget').innerHTML = 'Некорректно указана сумма';
     return;
   } else {
     arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
+    send = JSON.stringify(arr);
+    console.log(send);
   }
-
-  console.log(arr);
 }
 
 /***/ }),

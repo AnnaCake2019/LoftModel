@@ -1,3 +1,7 @@
+.upModel{
+    transition: 1s;
+    opacity: 1;
+}
 .for_centr{
     max-width: 1500px;
     margin: 0 auto;
@@ -8,6 +12,7 @@
 }
 
 .mainPicture{
+    transition: 1s;
     margin-top: 38px;
     margin-left: 40px;
     position: relative;
@@ -15,6 +20,7 @@
     width: 600px;
     height: 800px;
     img {
+        transition: 1s;
         position: absolute;
         z-index: 1;
         top: 50%;
@@ -26,6 +32,7 @@
     }
 }
 .descriptionModel{
+    transition: 1s;
     margin-left: 40px;
     margin-top: 35px;
     margin-bottom: 25px;
@@ -37,6 +44,9 @@
         justify-content: space-between;
         height: 40px;
 
+    }
+    .followersInst{
+        height: 60px;
     }
     .states{
         border-top: 1px slategray solid;
@@ -52,9 +62,7 @@
 }
 
 .collectionPictures{
-    //margin: 0 auto;
-    margin-left: 30px;
-    div{
+    .contPic{
         position: relative;
         overflow: hidden;
         width: 110px;
@@ -97,3 +105,170 @@
         }
     }
 }
+// широкий экран
+@media screen and (max-width: 1280px){
+    .mainPicture{
+        transition: 1s;
+        margin-left: 30px;
+        width: 500px;
+        height: 700px;
+        img {
+            transition: 1s;
+            width: 500px;
+            height: 700px;
+
+        }
+    }
+}
+
+// мой экран
+@media screen and (max-width: 1057px){
+    .mainPicture{
+        margin-left: 30px;
+        width: 350px;
+        height: 550px;
+        transition: 1s;
+        img {
+            transition: 1s;
+            width: 400px;
+            height: 600px;
+
+        }
+    }
+    .descriptionModel {
+        .states {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .collectionPictures {
+        .contPic {
+            width: 90px;
+            height: 90px;
+            margin: 5px;
+
+            img {
+
+                width: 90px;
+                height: 90px;
+
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 871px) {
+    .collectionPictures {
+        .contPic {
+            width: 70px;
+            height: 70px;
+            margin: 5px;
+
+            img {
+
+                width: 70px;
+                height: 70px;
+
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px){
+    .mainPicture{
+        margin: 20px auto 10px auto;
+        width: 600px;
+        height: 800px;
+        transition: 1s;
+        img {
+            transition: 1s;
+            width: 600px;
+            height: 800px;
+
+        }
+    }
+    .descriptionModel{
+        transition: 1s;
+        margin-left: 0;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        div{
+          margin: 0 auto 5px auto;
+        }
+    }
+    .collectionPictures{
+        .forFloat{
+            float: right;
+            div{
+                margin: 0 auto 5px auto;
+            }
+            .contPic {
+                width: 90px;
+                height: 90px;
+            }
+
+                img {
+
+                    width: 90px;
+                    height: 90px;
+
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mainPicture {
+        margin: 20px auto 10px auto;
+        width: 400px;
+        height: 600px;
+        transition: 1s;
+
+        img {
+            transition: 1s;
+            width: 400px;
+            height: 600px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mainPicture {
+        margin: 20px auto 10px auto;
+        width: 250px;
+        height: 400px;
+        transition: 1s;
+
+        img {
+            transition: 1s;
+            width: 250px;
+            height: 400px;
+
+        }
+    }
+    .descriptionModel {
+        .states {
+            width: 290px;
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .iPhone5 {
+        padding-left: 3px;
+    }
+    .descriptionModel {
+        .states {
+            width: 250px;
+        }
+    }
+
+}
+
+
+
