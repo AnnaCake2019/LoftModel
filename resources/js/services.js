@@ -68,23 +68,25 @@ money.addEventListener('blur', () => {
         money.classList.remove('error');
         document.querySelector('.answerBudget').innerHTML = '';
         but.style.pointerEvents = 'auto';
-
     }
 });
+
+arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
 
 
 function sendInfo(e) {
     e.preventDefault();
-        arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
-        send = JSON.stringify(arr);
-        arr = [];
-        console.log(send);
-        servForm.reset();
+    arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
 
-        // из modelWindow
-        modWin.classList.add('disNonWin');
-        modWin.classList.remove('disOpeWin');
-    }
+    send = JSON.stringify(arr);
+    arr = [];
+    console.log(send);
+    servForm.reset();
+
+    // из modelWindow
+    modWin.classList.add('disNonWin');
+    modWin.classList.remove('disOpeWin');
+}
 
 
 

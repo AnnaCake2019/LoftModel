@@ -28,10 +28,10 @@ function change() {
 
 
 //joke
-setTimeout(() =>{
-    setInterval(() =>{
-        let dimon = document.getElementById('dimon');
-        let p = document.querySelector('.lox').innerHTML = "Хозяин <br/> Димона!!!";
-        dimon.classList.toggle('neLox');
-    }, 4000);
-}, 600);
+// setTimeout(() =>{
+//     setInterval(() =>{
+//         let dimon = document.getElementById('dimon');
+//         let p = document.querySelector('.lox').innerHTML = "Хозяин <br/> Димона!!!";
+//         dimon.classList.toggle('neLox');
+//     }, 4000);
+// }, 600);

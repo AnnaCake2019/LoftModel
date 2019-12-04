@@ -59,9 +59,9 @@
 
 
 {{--    Joke --}}
-    <div class="neLox" id="dimon">
-        <p class="lox"></p>
-    </div>
+{{--    <div class="neLox" id="dimon">--}}
+{{--        <p class="lox"></p>--}}
+{{--    </div>--}}
 
 
 
