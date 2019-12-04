@@ -57,10 +57,12 @@
 <div id="center">
 
 
+
 {{--    Joke --}}
     <div class="neLox" id="dimon">
         <p class="lox"></p>
     </div>
+
 
 
     @yield('content')

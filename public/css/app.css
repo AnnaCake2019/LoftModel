@@ -557,6 +557,28 @@ footer .threeBlock {
   }
 }
 
+@media screen and (max-width: 769px) {
+  .cont_for_model {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cont_for_model .info_model {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cont_for_model .info_model .inf_about {
+    font-size: 1.3rem;
+    margin-top: 5px;
+  }
+
+  .cont_for_model img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .cont_for_model {
     width: 130px;
@@ -600,9 +622,19 @@ footer .threeBlock {
   }
 }
 
+@media screen and (max-width: 396px) {
+  .link_model {
+    margin-left: 15px;
+  }
+
+  .upBlock {
+    padding-right: 30px;
+  }
+}
+
 @media screen and (max-width: 370px) {
   .upBlock {
-    padding-right: 25px;
+    padding-right: 20px;
   }
 
   .cont_for_model {
@@ -623,6 +655,12 @@ footer .threeBlock {
   .cont_for_model img {
     width: 80px;
     height: 80px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .upBlock {
+    padding-right: 35px;
   }
 }
 
@@ -661,6 +699,46 @@ footer .threeBlock {
 
 .error {
   border: 1px red solid;
+}
+
+.answerCountry {
+  position: fixed;
+  background: white;
+  border: 1px red solid;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 4;
+  margin-top: 75px;
+}
+
+.answerCity {
+  position: fixed;
+  background: white;
+  border: 1px red solid;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 4;
+  margin-top: 80px;
+}
+
+.answerHours {
+  position: fixed;
+  background: white;
+  border: 1px red solid;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 4;
+  margin-top: 0;
+}
+
+.answerBudget {
+  position: fixed;
+  background: white;
+  border: 1px red solid;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 4;
+  margin-top: 0;
 }
 
 .disNonWin {
@@ -945,6 +1023,22 @@ footer .threeBlock {
 
   .contForImg #nextImg i {
     margin-left: 60px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .contForImg {
+    width: 230px;
+    height: 310px;
+  }
+
+  .contForImg #imgWindow {
+    width: 200px;
+    height: 290px;
+  }
+
+  .contForImg #nextImg i {
+    margin-left: 30px;
   }
 }
 

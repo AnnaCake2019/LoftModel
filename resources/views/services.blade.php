@@ -9,7 +9,7 @@
                 <div>
                     <label>Укажите страну встречи с моделью <br/>
                         Specify the country of the model
-                    </label><input required
+                    </label><input class="valid" required
                                    placeholder="Страна / Country" maxlength="10" id="Country" type="text">
                     <p class="answerCountry"></p>
                 </div>
@@ -18,7 +18,7 @@
                     <label>Укажите город встречи с моделью <br/>
                         Indicate the city of the meeting with the model
                     </label>
-                    <input required
+                    <input class="valid" required
                            placeholder="Город / City" maxlength="20" id="City" type="text">
                     <p class="answerCity"></p>
                 </div>
@@ -26,7 +26,7 @@
                     <label>Дата встречи<br/>
                         Date of meeting
                     </label>
-                    <input required
+                    <input class="valid" required
                            placeholder="Дата / Date" id="Date" type="date">
                 </div>
                 <div>
@@ -50,11 +50,11 @@
                     <label>укажите примерный бюджет заказа в $ <br/>
                         Indicate approximate order budget in $
                     </label>
-                    <input placeholder="Бюджет / Budget" id="Money" type="number">
+                    <input maxlength="7" placeholder="Бюджет / Budget" id="Money" type="text">
                     <p class="answerBudget"></p>
                 </div>
                 <div>
-                    <button id="bot" type="submit">
+                    <button id="but" type="submit">
                         отправить
                     </button>
                 </div>

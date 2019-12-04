@@ -11,9 +11,9 @@
                 @foreach($models as $model)
                     <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12 for_model_admin cont_for_models">
 {{--                        <a class="del" href="/public/admin/destroy/{{$model->id}}">X</a>--}}
-                        <a class="link_model" href="/public/showModel/{{$model->id}}">{{$model->name}}</a>
+                        <a class="link_model" href="/public/admin/adminModel/{{$model->id}}">{{$model->name}}</a>
                         <div class="cont_for_model">
-                            <a href="/public/showModel/{{$model->id}}">
+                            <a href="/public/admin/adminModel/{{$model->id}}">
                                 <img src="{{ asset('/storage/' . $model->main_photo) }}">
                                 <div class="info_model">
                                     <p>Возраст/Age: {{$model->age}}</p>

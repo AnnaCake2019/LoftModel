@@ -127,6 +127,29 @@
     }
 }
 
+@media screen and (max-width: 769px) {
+    .cont_for_model{
+        width: 150px;
+        height: 150px;
+        .info_model{
+            width: 150px;
+            height: 150px;
+            .inf_about{
+                font-size: 1.3rem;
+                margin-top: 5px;
+            }
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+        }
+
+    }
+
+}
+
+
 @media screen and (max-width: 576px){
     .cont_for_model{
         width: 130px;
@@ -165,10 +188,19 @@
         }
 
     }
+
+}
+@media screen and (max-width: 396px) {
+    .link_model{
+        margin-left: 15px;
+    }
+    .upBlock{
+      padding-right: 30px;
+    }
 }
 @media screen and (max-width: 370px) {
     .upBlock{
-        padding-right: 25px;
+        padding-right: 20px;
     }
     .cont_for_model{
         width: 80px;
@@ -187,5 +219,10 @@
             height: 80px;
         }
 
+    }
+}
+@media screen and (max-width: 321px) {
+    .upBlock{
+        padding-right: 35px;
     }
 }

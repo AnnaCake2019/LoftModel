@@ -24,6 +24,12 @@ class AdminController extends Controller
         return view('admin.albumA', compact('models'));
     }
 
+    public function adminModel($id)
+    {
+        $model = DB::table('models')->find($id);
+        return view('admin.adminModel', compact('model'));
+    }
+
 //    public function destroy($id) {
 //        DB::delete('delete from `models` where id = ?',[$id]);
 ////        $path = $main_photo;
