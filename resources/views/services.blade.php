@@ -55,7 +55,8 @@
                 </div>
                 <div>
                     <button id="but" type="submit">
-                        <a href="#" class="send"> //в этот href нужно вставить https://wa.me/79190477597?text=, а после text= должны быть все параметры, которые указываются на форме и лежат в services.js (country.value, city.value, date.value, hours.value, meeting.value, money.value). И вот как их сюда поставить, я вообще не ебу
+                        <a href="#" class="send">
+{{--                            //в этот href нужно вставить https://wa.me/79190477597?text=, а после text= должны быть все параметры, которые указываются на форме и лежат в services.js (country.value, city.value, date.value, hours.value, meeting.value, money.value). И вот как их сюда поставить, я вообще не ебу--}}
                             отправить
                         </a>
                     </button>
