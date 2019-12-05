@@ -103,6 +103,7 @@ var money = document.getElementById('Money');
 var answer = document.getElementById('answer');
 var but = document.getElementById('but');
 var valid = document.querySelectorAll('.valid');
+var sendWhatsApp = document.getElementById('sendFormWhatsApp');
 var arr = [];
 var send;
 servForm.addEventListener('submit', sendInfo);
@@ -157,13 +158,23 @@ money.addEventListener('blur', function () {
     but.style.pointerEvents = 'auto';
   }
 });
+arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
 
 function sendInfo(e) {
   e.preventDefault();
-  arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
+  arr.push({
+    country: country.value,
+    city: city.value,
+    date: date.value,
+    hours: hours.value,
+    meeting: meeting.value,
+    money: money.value
+  });
   send = JSON.stringify(arr);
   arr = [];
   console.log(send);
+  sendWhatsApp.setAttribute('href', "https://wa.me/79190477597?text=".concat(send));
+  console.log(sendWhatsApp);
   servForm.reset(); // из modelWindow
 
   modWin.classList.add('disNonWin');

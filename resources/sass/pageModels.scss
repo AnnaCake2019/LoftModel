@@ -190,18 +190,8 @@
     }
 
 }
-@media screen and (max-width: 396px) {
-    .link_model{
-        margin-left: 15px;
-    }
-    .upBlock{
-      padding-right: 30px;
-    }
-}
-@media screen and (max-width: 370px) {
-    .upBlock{
-        padding-right: 20px;
-    }
+@media screen and (max-width: 375px) {
+
     .cont_for_model{
         width: 80px;
         height: 80px;
@@ -222,7 +212,22 @@
     }
 }
 @media screen and (max-width: 321px) {
-    .upBlock{
-        padding-right: 35px;
+    .cont_for_model{
+        width: 65px;
+        height: 65px;
+        .info_model{
+            width: 65px;
+            height: 65px;
+            .inf_about{
+                font-size: 0.4rem;
+                margin-top: 5px;
+            }
+        }
+
+        img{
+            width: 65px;
+            height: 65px;
+        }
+
     }
 }

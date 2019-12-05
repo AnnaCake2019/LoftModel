@@ -1,5 +1,8 @@
 @extends('admin.menu')
 @section('content')
+    <a class="back" href="/public/admin"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+
+
     <div class="container">
         <div class="row">
             <div class="offset-1 col-6">
@@ -33,7 +36,7 @@
                     <div class="inf"><libel>Страна</libel><input name="country" type="text"></div>
                     <div class="inf"><libel>Город</libel><input name="city" type="text"></div>
                     <div class="inf"><libel>Подписчиков</libel><input name="followers" type="text"></div>
-                    <div class="inf"><libel>Достижения</libel><input name="achievements" type="text"></div>
+                    <div class="inf"><libel>Достижения</libel><textarea name="achievements"></textarea></div>
                     <div class="inf"><libel>От кого</libel><input name="from_who" type="text"></div>
                     <input type="submit" value="Опубликовать">
                 </form>

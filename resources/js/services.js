@@ -8,6 +8,8 @@ const money = document.getElementById('Money');
 const answer = document.getElementById('answer');
 const but = document.getElementById('but');
 const valid = document.querySelectorAll('.valid');
+const sendWhatsApp = document.getElementById('sendFormWhatsApp');
+
 let arr = [];
 let send;
 
@@ -76,11 +78,20 @@ arr.push(country.value, city.value, date.value, hours.value, meeting.value, mone
 
 function sendInfo(e) {
     e.preventDefault();
-    arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
+    arr.push( {
+        country : country.value,
+        city : city.value,
+        date : date.value,
+        hours : hours.value,
+        meeting : meeting.value,
+        money :money.value
+    });
 
     send = JSON.stringify(arr);
     arr = [];
     console.log(send);
+    sendWhatsApp.setAttribute('href', `https://wa.me/79190477597?text=${send}`);
+    console.log(sendWhatsApp);
     servForm.reset();
 
     // из modelWindow

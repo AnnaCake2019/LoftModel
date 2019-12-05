@@ -1,6 +1,8 @@
 @extends('adminStart')
 
 @section('content')
+    <a class="back" href="/public/"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+
     <div class="container">
         <div class="row">
             <div class="offset-4 col-4">

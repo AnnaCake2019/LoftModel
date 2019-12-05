@@ -28,7 +28,7 @@
             <ul>
                 <li class="menuPC"><a href="/public/services">Условия Заказа / Order Terms</a></li>
                 <li class="menuPC"><a href="/public/models">Модели / Models</a></li>
-                <li class="menuPC"><a href="/public/modelsVip">Vip Зал / Vip Hall</a></li>
+{{--                <li class="menuPC"><a href="/public/modelsVip">Vip Зал / Vip Hall</a></li>--}}
                 <li class="menuPC"><a href="/public/price">Прайс / Price</a></li>
                 <li class="menuPC"><a href="/public/vacancy">Вакансии / Jobs</a></li>
                 <li class="menuPC"><a href="/public/contacts">Контакты / Contact</a></li>
@@ -42,7 +42,7 @@
             <li><p>+7 (951) 686-43-36</p></li>
             <li><a href="/public/services">Условия Заказа/Order Terms</a></li>
             <li><a href="/public/models">Модели/Models</a></li>
-            <li><a href="/public/modelsVip">Vip Зал/Vip Hall</a></li>
+{{--            <li><a href="/public/modelsVip">Vip Зал/Vip Hall</a></li>--}}
             <li><a href="/public/price">Прайс/Price</a></li>
             <li><a href="/public/vacancy">Вакансии/Jobs</a></li>
             <li><a href="/public/contacts">Контакты/Contact</a></li>
@@ -55,14 +55,6 @@
 
 <div class="wra">
 <div id="center">
-
-
-
-{{--    Joke --}}
-{{--    <div class="neLox" id="dimon">--}}
-{{--        <p class="lox"></p>--}}
-{{--    </div>--}}
-
 
 
     @yield('content')

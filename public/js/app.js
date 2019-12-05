@@ -97,7 +97,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu */ "./resources/js/menu.js");
 /* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_menu__WEBPACK_IMPORTED_MODULE_0__);
- // import 'slick-carousel';
+
 
 /***/ }),
 
@@ -131,16 +131,7 @@ function open() {
 function change() {
   fonMenu.classList.toggle('forMenuPhoneOpacity');
   fonMenu.classList.toggle('nonOpacity');
-} //joke
-
-
-setTimeout(function () {
-  setInterval(function () {
-    var dimon = document.getElementById('dimon');
-    var p = document.querySelector('.lox').innerHTML = "Хозяин <br/> Димона!!!";
-    dimon.classList.toggle('neLox');
-  }, 4000);
-}, 600);
+}
 
 /***/ }),
 
