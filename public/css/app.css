@@ -309,7 +309,7 @@ footer .threeBlock {
 }
 
 .bodyAdmin {
-  background: linear-gradient(153deg, #eeaeca 28%, #94bbe9 100%);
+  background: silver;
   height: 100%;
   width: 100%;
 }
@@ -697,6 +697,13 @@ footer .threeBlock {
   color: #4f424c;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+#sumModels {
+  position: fixed;
+  font-size: 2rem;
+  top: 35px;
+  left: 10px;
 }
 
 .error {

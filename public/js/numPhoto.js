@@ -81,45 +81,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/admin/app.js":
-/*!***********************************!*\
-  !*** ./resources/js/admin/app.js ***!
-  \***********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _forPhoto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./forPhoto */ "./resources/js/admin/forPhoto.js");
-/* harmony import */ var _forPhoto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_forPhoto__WEBPACK_IMPORTED_MODULE_0__);
-
-
-/***/ }),
-
-/***/ "./resources/js/admin/forPhoto.js":
-/*!****************************************!*\
-  !*** ./resources/js/admin/forPhoto.js ***!
-  \****************************************/
+/***/ "./resources/js/numPhoto.js":
+/*!**********************************!*\
+  !*** ./resources/js/numPhoto.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+var models = document.getElementsByClassName('for_model_admin');
+var sumModels = document.getElementById('sumModels');
+sumModels.innerHTML = "\u041C\u043E\u0434\u0435\u043B\u0435\u0439 \u043D\u0430 <br/> \u0441\u0430\u0439\u0442\u0435: ".concat(models.length);
 
 /***/ }),
 
-/***/ 10:
-/*!*****************************************!*\
-  !*** multi ./resources/js/admin/app.js ***!
-  \*****************************************/
+/***/ 9:
+/*!****************************************!*\
+  !*** multi ./resources/js/numPhoto.js ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\admin\app.js */"./resources/js/admin/app.js");
+module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\numPhoto.js */"./resources/js/numPhoto.js");
 
 
 /***/ })

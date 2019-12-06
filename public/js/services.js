@@ -157,8 +157,7 @@ money.addEventListener('blur', function () {
     document.querySelector('.answerBudget').innerHTML = '';
     but.style.pointerEvents = 'auto';
   }
-});
-arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
+}); // arr.push(country.value, city.value, date.value, hours.value, meeting.value, money.value);
 
 function sendInfo(e) {
   e.preventDefault();
@@ -172,15 +171,9 @@ function sendInfo(e) {
   });
   send = JSON.stringify(arr);
   arr = [];
-  console.log(send);
-  // sendWhatsApp.setAttribute('href', "https://wa.me/79190477597?text=".concat(country.value));
-    location.href= `https://wa.me/79190477597?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5,%20%D0%BD%D0%B5%D0%BE%D0%B1%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%B0%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%BF%D0%BE%20%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B8%D0%BC%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%D0%BC:%0A%0A
-    %D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B0:%20${country.value}%0A
-    %D0%93%D0%BE%D1%80%D0%BE%D0%B4:%20${city.value}%0A
-    %D0%94%D0%B0%D1%82%D0%B0:%20${date.value}%0A
-    %D0%92%D1%80%D0%B5%D0%BC%D1%8F%20(%D0%B2%20%D1%87%D0%B0%D1%81%D0%B0%D1%85):%20${hours.value}%0A
-    %D0%9C%D0%B5%D1%81%D1%82%D0%BE%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8:%20${meeting.value}%0A
-    %D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82%20(%D0%B2%20$):%20${money.value}`;
+  console.log(send); // sendWhatsApp.setAttribute('href', "https://wa.me/79190477597?text=".concat(country.value));
+
+  location.href = "https://wa.me/79190477597?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5,%20%D0%BD%D0%B5%D0%BE%D0%B1%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%B0%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20%D0%BF%D0%BE%20%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B8%D0%BC%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%D0%BC:%0A%0A\n    %D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B0:%20".concat(country.value, "%0A\n    %D0%93%D0%BE%D1%80%D0%BE%D0%B4:%20").concat(city.value, "%0A\n    %D0%94%D0%B0%D1%82%D0%B0:%20").concat(date.value, "%0A\n    %D0%92%D1%80%D0%B5%D0%BC%D1%8F%20(%D0%B2%20%D1%87%D0%B0%D1%81%D0%B0%D1%85):%20").concat(hours.value, "%0A\n    %D0%9C%D0%B5%D1%81%D1%82%D0%BE%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B8:%20").concat(meeting.value, "%0A\n    %D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82%20(%D0%B2%20$):%20").concat(money.value);
   console.log(sendWhatsApp);
   servForm.reset(); // из modelWindow
 

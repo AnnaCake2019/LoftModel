@@ -2,7 +2,7 @@
 
 @section('content')
     <a class="back" href="/public/admin/modelsA"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
-
+    <p id="sumModels"></p>
     <div class="container">
         <div class="row">
             <div class="offset-1 col-10 title_models">
@@ -43,4 +43,5 @@
                 @endforeach
         </div>
     </div>
+    <script src="/public/js/numPhoto.js"></script>
 @endsection
