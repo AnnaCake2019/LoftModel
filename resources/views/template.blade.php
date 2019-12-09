@@ -70,16 +70,16 @@
         <div class="row">
             <div class="offset-3 col-6 secondBlock">
                 <div>
-                    <a href="#" title="Telegram"><i class="fab fa-telegram-plane tel"></i></a>
+                    <a href="https://tttttt.me/joinchat/AAAAAEd4lfrVS4ysSaN-qA" title="Telegram"><i class="fab fa-telegram-plane tel"></i></a>
                 </div>
                 <div>
-                    <a href="#" title="Instagram"><i class="fab fa-instagram inst"></i></a>
+                    <a href="https://instagram.com/loft_model?igshid=1139iivniji2v" title="Instagram"><i class="fab fa-instagram inst"></i></a>
                 </div>
                 <div>
                     <a href="#" title="VK"><i class="fab fa-vk vk"></i></a>
                 </div>
                 <div>
-                    <a href="#" title="WhatsApp"><i class="fab fa-whatsapp wats"></i></a>
+                    <a href="https://wa.me/79190477597?text=" title="WhatsApp"><i class="fab fa-whatsapp wats"></i></a>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
             <div class="offset-3 col-6 threeBlock">
                 <p>&copy; 2019 Loft Model Agency</p>
                 @if(Auth::check())
-                    <a href="/public/admin">Online</a>
+                    <a href="/public/admin">Online</a>-
                     <a href="/public/logout">Logout</a>
                 @endif
             </div>
