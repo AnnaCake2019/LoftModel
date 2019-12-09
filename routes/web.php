@@ -25,7 +25,7 @@ Route::get('/vacancy', 'FrontController@vacancy');
 Route::get('/contacts', 'FrontController@contacts');
 
 Auth::routes();
-Route::get('/logout', 'Auth/LoginController@logout');
+Route::get('logout', 'Auth\LoginController@logout');
 // запрет регистрации
 //Route::match(['GET', 'POST'], 'register', function()
 //{

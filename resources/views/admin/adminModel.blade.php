@@ -3,7 +3,6 @@
 @section('content')
     <a class="back" href="/public/admin/albumA"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
 
-
     <div id="contForPhotoModel">
         <i class="fa fa-times-circle noneCloseImg closeImg" id="closeImg" aria-hidden="true"></i>
         <div class="noneCloseImg" id="backImg">

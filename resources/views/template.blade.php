@@ -87,7 +87,8 @@
             <div class="offset-3 col-6 threeBlock">
                 <p>&copy; 2019 Loft Model Agency</p>
                 @if(Auth::check())
-                    Online
+                    <a href="/public/admin">Online</a>
+                    <a href="/public/logout">Logout</a>
                 @endif
             </div>
         </div>
