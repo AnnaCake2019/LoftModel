@@ -81,54 +81,84 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/modelWindow.js":
-/*!*************************************!*\
-  !*** ./resources/js/modelWindow.js ***!
-  \*************************************/
+/***/ "./resources/js/language.js":
+/*!**********************************!*\
+  !*** ./resources/js/language.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var serv = document.getElementById('serv');
-setTimeout(servUP, 100);
+var ru = document.getElementById('ru');
+var en = document.getElementById('en');
+var styleRu = document.getElementsByClassName('ru');
+var styleEn = document.getElementsByClassName('en');
+var swi;
+ru.addEventListener('click', function (e) {
+  localStorage.clear();
+  localStorage.setItem('ru', ru.value);
+  console.log(localStorage.getItem('ru'));
+  location.reload();
+});
+en.addEventListener('click', function (e) {
+  localStorage.clear();
+  localStorage.setItem('en', en.value);
+  console.log(localStorage.getItem('en'));
+  location.reload();
+});
 
-function servUP() {
-  serv.classList.remove('servDown');
-  serv.classList.add('servUp');
+if (localStorage.getItem('ru')) {
+  ru.setAttribute('checked', '');
+
+  for (var i = 0; i < styleRu.length; i++) {
+    console.log(styleRu[i]);
+    styleRu[i].classList.remove('ruNon');
+    styleRu[i].classList.add('ruHere');
+  }
+
+  for (var _i = 0; _i < styleEn.length; _i++) {
+    console.log(styleEn[_i]);
+
+    styleEn[_i].classList.remove('enHere');
+
+    styleEn[_i].classList.add('enNon');
+  }
 }
 
-var linkOW = document.getElementById('linkOW');
-var buttonOW = document.getElementById('buttonOW');
-var modWin = document.getElementById('modWin');
-var closeModel = document.getElementById('closeServerWin');
-buttonOW.addEventListener('click', butWindow);
-linkOW.addEventListener('click', butWindow);
-closeModel.addEventListener('click', closeMW);
+if (localStorage.getItem('en')) {
+  en.setAttribute('checked', '');
 
-function butWindow() {
-  modWin.classList.remove('disNonWin');
-  modWin.classList.add('disOpeWin');
-}
+  for (var _i2 = 0; _i2 < styleRu.length; _i2++) {
+    console.log(styleRu[_i2]);
 
-function closeMW() {
-  modWin.classList.add('disNonWin');
-  modWin.classList.remove('disOpeWin');
+    styleRu[_i2].classList.add('ruNon');
+
+    styleRu[_i2].classList.remove('ruHere');
+  }
+
+  for (var _i3 = 0; _i3 < styleEn.length; _i3++) {
+    console.log(styleEn[_i3]);
+
+    styleEn[_i3].classList.add('enHere');
+
+    styleEn[_i3].classList.remove('enNon');
+  }
 }
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************************!*\
-  !*** multi ./resources/js/modelWindow.js ***!
-  \*******************************************/
+/***/ 10:
+/*!****************************************!*\
+  !*** multi ./resources/js/language.js ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\modelWindow.js */"./resources/js/modelWindow.js");
+module.exports = __webpack_require__(/*! B:\work\OpenServer\OSPanel\domains\LoftModel\resources\js\language.js */"./resources/js/language.js");
 
 
 /***/ })

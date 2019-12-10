@@ -12,10 +12,12 @@ const closeModel = document.getElementById('closeServerWin');
 buttonOW.addEventListener('click', butWindow);
 linkOW.addEventListener('click', butWindow);
 closeModel.addEventListener('click', closeMW);
-function butWindow(e) {
+
+function butWindow() {
     modWin.classList.remove('disNonWin');
     modWin.classList.add('disOpeWin');
 }
+
 function closeMW() {
    modWin.classList.add('disNonWin');
    modWin.classList.remove('disOpeWin');

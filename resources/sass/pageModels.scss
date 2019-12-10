@@ -11,6 +11,16 @@
 
 .title_models{
     text-align: center;
+    a{
+        color: black;
+        font-size: 17px;
+        text-decoration: none;
+        transition: 1s;
+        &:hover{
+            color: lightslategrey;
+            transition: 1s;
+        }
+    }
 }
 .cont_for_models{
     transition: 1s;

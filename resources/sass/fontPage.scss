@@ -25,7 +25,21 @@
         }
         .font_page_two{
 
-            font-size: 5rem;
+            font-size: 11rem;
         }
+    }
+}
+@media screen and (max-width: 569px){
+    .font_page{
+        div {
+            .font_page_two {
+                font-size: 7rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 415px){
+    .font_page{
+        background-attachment: local;
     }
 }

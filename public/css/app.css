@@ -204,6 +204,20 @@ footer .threeBlock {
   margin-top: 5px;
 }
 
+.linkForAdmin {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.linkForAdmin:hover {
+  color: red;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 @media screen and (max-width: 1100px) {
   header ul a {
     font-size: 10px;
@@ -413,7 +427,19 @@ footer .threeBlock {
 }
 
 .font_page div .font_page_two {
-  font-size: 5rem;
+  font-size: 11rem;
+}
+
+@media screen and (max-width: 569px) {
+  .font_page div .font_page_two {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .font_page {
+    background-attachment: local;
+  }
 }
 
 .downBlock {
@@ -430,6 +456,20 @@ footer .threeBlock {
 
 .title_models {
   text-align: center;
+}
+
+.title_models a {
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.title_models a:hover {
+  color: lightslategrey;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .cont_for_models {
@@ -773,9 +813,13 @@ footer .threeBlock {
 }
 
 .disOpeWin {
-  -webkit-box-pack: center;
-          justify-content: center;
-  height: 600px;
+  font-family: 'Playfair Display', serif;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  height: 500px;
   width: 400px;
   position: fixed;
   top: 0;
@@ -783,15 +827,20 @@ footer .threeBlock {
   margin: auto;
   left: 0;
   right: 0;
-  background-color: silver;
+  background-color: white;
   border: 1px black solid;
   border-radius: 2px;
   opacity: 1;
   z-index: 2;
-  display: -webkit-box;
   display: flex;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.disOpeWin .headForm {
+  text-align: center;
+  background-color: silver;
+  height: 60px;
 }
 
 .disOpeWin .closeServer {
@@ -818,6 +867,34 @@ footer .threeBlock {
   -webkit-box-direction: normal;
           flex-direction: column;
   margin-bottom: 10px;
+}
+
+.disOpeWin form div input {
+  border: 1px black solid;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.disOpeWin form div button {
+  margin: 10px auto;
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: silver;
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.disOpeWin form div button:hover {
+  box-shadow: 1px 2px 5px rgba(206, 89, 55, 0.71);
+  background-color: lightslategrey;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.disOpeWin form div #allError {
+  text-align: center;
 }
 
 .servDown {
@@ -856,10 +933,11 @@ footer .threeBlock {
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .serv .ofer_inf a {
-  color: black;
+  color: #6f42c1;
   font-weight: bold;
   text-decoration: none;
   -webkit-transition: 1s;
@@ -894,8 +972,12 @@ footer .threeBlock {
 
 @media screen and (max-width: 450px) {
   .disOpeWin {
-    height: 550px;
+    height: 500px;
     width: 300px;
+  }
+
+  .disOpeWin .headForm h4 {
+    font-size: 15px;
   }
 }
 
@@ -1146,6 +1228,10 @@ footer .threeBlock {
   -webkit-transition: 1s;
   transition: 1s;
   opacity: 1;
+}
+
+.about {
+  text-align: center;
 }
 
 .about h1 {
@@ -1486,5 +1572,21 @@ footer .threeBlock {
 
 .price h2 {
   text-align: center;
+}
+
+.ruNon {
+  display: none;
+}
+
+.ruHere {
+  display: block;
+}
+
+.enNon {
+  display: none;
+}
+
+.enHere {
+  display: block;
 }
 

@@ -5,13 +5,17 @@
 {{--    start Modal    --}}
         <div class="disNonWin" id="modWin">
             <i class="fa fa-times-circle closeServer" id="closeServerWin" aria-hidden="true"></i>
+            <div class="headForm">
+                <h4>Анкета для персонального кастинга<br/>
+                    Application for personal casting</h4>
+            </div>
             <form action="#" method="post" name="services">
                 <div>
                     <label>Укажите страну встречи с моделью <br/>
                         Specify the country of the model
                     </label><input class="valid" required
                                    placeholder="Страна / Country" maxlength="10" id="Country" type="text">
-                    <p class="answerCountry"></p>
+{{--                    <p class="answerCountry"></p>--}}
                 </div>
                 <div>
 
@@ -20,38 +24,21 @@
                     </label>
                     <input class="valid" required
                            placeholder="Город / City" maxlength="20" id="City" type="text">
-                    <p class="answerCity"></p>
+{{--                    <p class="answerCity"></p>--}}
                 </div>
                 <div>
                     <label>Дата встречи<br/>
                         Date of meeting
                     </label>
-                    <input class="valid" required
-                           placeholder="Дата / Date" id="Date" type="date">
+                    <input  required
+                            id="Date" type="date">
                 </div>
                 <div>
-                    <label>Количество часов<br/>
-                        Hours
-                    </label>
-                    <input placeholder="Часов / Hours" id="Hours" type="number">
-                    <p class="answerHours"></p>
-                </div>
-                <div>
-                    <label>Место встречи<br/>
-                        Meeting point
-                    </label>
-                    <select id="Meeting">
-                        <option value="Event">Мероприятие / Event</option>
-                        <option value="Carriage">Путушуствие / Carriage</option>
-                        <option value="Hotel">Отель / Hotel</option>
-                    </select>
-                </div>
-                <div>
-                    <label>укажите примерный бюджет заказа в $ <br/>
+                    <label>Укажите примерный бюджет заказа в $ <br/>
                         Indicate approximate order budget in $
                     </label>
                     <input maxlength="7" placeholder="Бюджет / Budget" id="Money" type="text">
-                    <p class="answerBudget"></p>
+{{--                    <p class="answerBudget"></p>--}}
                 </div>
                 <div>
                     <button id="but" type="submit">
@@ -59,6 +46,9 @@
                             отправить
                         </a>
                     </button>
+                </div>
+                <div class="sendForm">
+                    <p id="allError"></p>
                 </div>
             </form>
         </div>
@@ -89,15 +79,15 @@
                     <p>
                         Как осуществляется оплата:<br/>
                         Определяемся с выбором Модели , осуществляется первая встреча . Оплата происходит сразу перед
-                        началом действий Модели . Онлайн или наличными на руки .
+                        началом работы Модели . Онлайн или наличными на руки .
                         <br/>
                         Так же вы можете указать дополнительные пожелания администратору на WhatsApp . Все не
                         продолжительные встречи происходят в отеле, <strong>отель оплачивает клиент</strong>.
                         При заказе Модели из другой страны <strong>транспортные расходы и проживание Модели оплачивает
                             клиент</strong>.
-                        Мы сотрудничаем как c начинающими моделями ( с не раскрученным рейтингом , так и с топ моделями
-                        ) <strong>бюджет каждой из них индивидуален</strong>
-                        от уровня её популярности. <br/>
+                        Мы сотрудничаем как c начинающими моделями ( с не раскрученным рейтингом ) , так и с топ-моделями ,
+                         <strong>бюджет каждой из них индивидуален</strong>
+                        от уровня её популярности и от условий заказа. <br/>
                         Бюджет уточнять у администратора.
                     </p>
                 </div>

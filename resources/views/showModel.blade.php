@@ -27,6 +27,12 @@
                 <div class="col-md-6 col-sm-12">
                     <div>
                         <div class="descriptionModel">
+                            @if(Auth::check())
+                                <div>
+                                    <p>От кого</p>
+                                    <p>{{$model->from_who}}</p>
+                                </div>
+                            @endif
                             <div>
                                 <p>Возраст / Age </p>
                                 <p>{{$model->age}}</p>

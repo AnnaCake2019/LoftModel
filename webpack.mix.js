@@ -21,6 +21,8 @@ mix.js('resources/js/about.js', 'public/js');
 mix.js('resources/js/services.js', 'public/js');
 mix.js('resources/js/oneModel.js', 'public/js');
 mix.js('resources/js/numPhoto.js', 'public/js');
+mix.js('resources/js/language.js', 'public/js');
+
 
 
 
