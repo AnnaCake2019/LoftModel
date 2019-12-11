@@ -80,6 +80,8 @@ class AdminController extends Controller
             'chest' => 'required',
             'country' => 'required',
             'city' => 'required',
+            'en_country' => 'required',
+            'en_city' => 'required',
         ]);
 
         $path = $request->file('main_photo')->store('uploads', 'public');
@@ -93,8 +95,11 @@ class AdminController extends Controller
         $chest = $request->post('chest');
         $country = $request->post('country');
         $city = $request->post('city');
+        $en_country = $request->post('en_country');
+        $en_city = $request->post('en_city');
         $followers = $request->post('followers');
         $achievements = $request->post('achievements');
+        $en_achievements = $request->post('en_achievements');
         $from_who = $request->post('from_who');
         DB::table('models')->insert(
             [
@@ -113,8 +118,11 @@ class AdminController extends Controller
                 'chest' => $chest,
                 'country' => $country,
                 'city' => $city,
+                'en_country' => $en_country,
+                'en_city' => $en_city,
                 'followers' => $followers,
                 'achievements' => $achievements,
+                'en_achievements' => $en_achievements,
                 'from_who' => $from_who
             ]
         );

@@ -1,8 +1,6 @@
-@extends('adminStart')
+@extends('template')
 
 @section('content')
-    <a class="back" href="/public/admin/albumA"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
-
     <div id="contForPhotoModel">
         <i class="fa fa-times-circle noneCloseImg closeImg" id="closeImg" aria-hidden="true"></i>
         <div class="noneCloseImg" id="backImg">
@@ -29,56 +27,46 @@
                 <div class="col-md-6 col-sm-12">
                     <div>
                         <div class="descriptionModel">
+                            @if(Auth::check())
+                                <div>
+                                    <p>От кого</p>
+                                    <p>{{$model->from_who}}</p>
+                                </div>
+                            @endif
                             <div>
-                                <h4 >От</h4>
-                                <h4>{{$model->from_who}}</h4>
-                            </div>
-                            <div>
-                                <p>Возраст</p>
+                                <p>Age </p>
                                 <p>{{$model->age}}</p>
                             </div>
                             <div>
-                                <p>Рост</p>
+                                <p>Height </p>
                                 <p>{{$model->height}}</p>
                             </div>
                             <div>
-                                <p>Вес</p>
+                                <p>Weight </p>
                                 <p>{{$model->weight}}</p>
                             </div>
                             <div>
-                                <p>Параметры </p>
+                                <p>Options </p>
                                 <p>{{$model->parameters}}</p>
                             </div>
                             <div>
-                                <p>Грудь</p>
+                                <p>Chest </p>
                                 <p>{{$model->chest}}</p>
                             </div>
                             <div>
-                                <p>Город</p>
-                                <p>{{$model->city}}</p>
-                            </div>
-                            <div>
-                                <p>City</p>
+                                <p>City </p>
                                 <p>{{$model->en_city}}</p>
                             </div>
                             <div>
-                                <p>Страна</p>
-                                <p>{{$model->country}}</p>
-                            </div>
-                            <div>
-                                <p>Country</p>
+                                <p>Country </p>
                                 <p>{{$model->en_country}}</p>
                             </div>
                             <div class="followersInst">
-                                <p>Подписчиков в Instagram</p>
+                                <p>Instagram Followers</p>
                                 <p>{{$model->followers}}</p>
                             </div>
                             <div class="states">
-                                <h4 class="state">Статус</h4>
-                                <h4>{{$model->achievements}}</h4>
-                            </div>
-                            <div class="states">
-                                <h4 class="state">achievements</h4>
+                                <h4 class="state">Status</h4>
                                 <h4>{{$model->en_achievements}}</h4>
                             </div>
                         </div>
@@ -147,9 +135,11 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-12 request">
+                <a href="https://wa.me/79190477597?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5,%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B7%D0%B0%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BE%D0%B2%D0%B0%D0%BB%D0%B0%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20http://loftmodel/public/EnShowModel/{{ $model->id }}">Request</a>
+            </div>
         </div>
     </div>
     <script src="/public/js/onlyModel.js"></script>
     <script src="/public/js/oneModel.js"></script>
 @endsection
-

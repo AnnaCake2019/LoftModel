@@ -34,9 +34,13 @@
                     <div class="inf"><libel>Параметры</libel><input name="parameters" type="text"></div>
                     <div class="inf"><libel>Грудь</libel><input name="chest" type="text"></div>
                     <div class="inf"><libel>Страна</libel><input name="country" type="text"></div>
+                    <div class="inf"><libel>en_country</libel><input name="en_country" type="text"></div>
                     <div class="inf"><libel>Город</libel><input name="city" type="text"></div>
+                    <div class="inf"><libel>en_city</libel><input name="en_city" type="text"></div>
                     <div class="inf"><libel>Подписчиков</libel><input name="followers" type="text"></div>
                     <div class="inf"><libel>Достижения</libel><textarea name="achievements"></textarea></div>
+                    <div class="inf"><libel>en_achievements</libel><textarea name="en_achievements"></textarea></div>
+
                     <div class="inf"><libel>От кого</libel><input name="from_who" type="text"></div>
                     <input type="submit" value="Опубликовать">
                 </form>

@@ -16,6 +16,12 @@ class FrontController extends Controller
         return view('models', compact('models'));
     }
 
+    public function EnModels()
+    {
+        $models = DB::table('models')->get();
+        return view('EnModels', compact('models'));
+    }
+
     public function modelsVip()
     {
         return view('modelsVip', ['modelsVip' => 'modelsVip']);
@@ -42,6 +48,12 @@ class FrontController extends Controller
         return view('showModel', compact('model'));
     }
 
+    public function EnShowModel($id)
+    {
+        $model = DB::table('models')->find($id);
+        return view('EnShowModel', compact('model'));
+    }
+
     public function showModelVip()
     {
         return view('showModelVip', ['showModelVip' => 'showModelVip']);
@@ -51,9 +63,21 @@ class FrontController extends Controller
     {
         return view('vacancy', ['vacancy' => 'vacancy']);
     }
+
+    public function EnVacancy()
+    {
+        return view('EnVacancy', ['vacancy' => 'vacancy']);
+    }
+
+
     public function contacts()
     {
         return view('contacts', ['contacts' => 'contacts']);
+    }
+
+    public function EnContacts()
+    {
+        return view('EnContacts', ['contacts' => 'contacts']);
     }
 
 }

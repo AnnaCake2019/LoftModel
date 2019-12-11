@@ -29,9 +29,12 @@ class CreateModelsTable extends Migration
             $table->text('parameters');
             $table->integer('chest');
             $table->text('country');
+            $table->text('en_country');
             $table->text('city');
+            $table->text('en_city');
             $table->text('followers');
             $table->longText('achievements');
+            $table->longText('en_achievements');
             $table->text('from_who');
             $table->timestamps();
         });

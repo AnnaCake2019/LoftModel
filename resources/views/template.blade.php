@@ -24,16 +24,21 @@
             <h3><a href="/public">Loft Model</a></h3>
             <p>+7 (951) 686-43-36</p>
         </div>
+        <div class="lang">
+            <div>
+            <img id="ru" src="/public/images/russia.png">
+        </div>
+{{--            <input type="radio" name="len" value="ru" id="ru">--}}
         <div>
-            <p>Язык</p>
-            <lable>Ru<input type="radio" name="len" value="ru" id="ru"></lable>
-            <lable>En<input type="radio" name="len" value="en" id="en"></lable>
+            <img id="en" src="/public/images/united-kingdom.png">
+        </div>
+{{--            <input type="radio" name="len" value="en" id="en">--}}
         </div>
         <nav>
             <ul class="ru">
                 <li class="menuPC"><a href="/public/services">Условия Заказа</a></li>
                 <li class="menuPC"><a href="/public/models">Модели</a></li>
-{{--                <li class="menuPC"><a href="/public/modelsVip">Vip Зал / Vip Hall</a></li>--}}
+{{--                <li class="menuPC"><a href="/public/modelsVip">Vip Зал</a></li>--}}
                 <li class="menuPC"><a href="/public/price">Прайс</a></li>
                 <li class="menuPC"><a href="/public/vacancy">Вакансии</a></li>
                 <li class="menuPC"><a href="/public/contacts">Контакты</a></li>
@@ -41,11 +46,11 @@
             </ul>
             <ul class="en">
                 <li class="menuPC"><a href="/public/services">Order Terms</a></li>
-                <li class="menuPC"><a href="/public/models">Models</a></li>
-                {{--                <li class="menuPC"><a href="/public/modelsVip">Vip Зал / Vip Hall</a></li>--}}
+                <li class="menuPC"><a href="/public/EnModels">Models</a></li>
+{{--                <li class="menuPC"><a href="/public/modelsVip">Vip Hall</a></li>--}}
                 <li class="menuPC"><a href="/public/price">Price</a></li>
-                <li class="menuPC"><a href="/public/vacancy">Jobs</a></li>
-                <li class="menuPC"><a href="/public/contacts">Contact</a></li>
+                <li class="menuPC"><a href="/public/EnVacancy">Jobs</a></li>
+                <li class="menuPC"><a href="/public/EnContacts">Contact</a></li>
                 <li class="menuPC"><a href="/public/about">About Us</a></li>
             </ul>
         </nav>
@@ -56,7 +61,7 @@
             <li><p>+7 (951) 686-43-36</p></li>
             <li><a href="/public/services">Условия Заказа</a></li>
             <li><a href="/public/models">Модели</a></li>
-{{--            <li><a href="/public/modelsVip">Vip Зал/Vip Hall</a></li>--}}
+{{--            <li><a href="/public/modelsVip">Vip Зал</a></li>--}}
             <li><a href="/public/price">Прайс</a></li>
             <li><a href="/public/vacancy">Вакансии</a></li>
             <li><a href="/public/contacts">Контакты</a></li>
@@ -65,11 +70,11 @@
         <ul class="en">
             <li><p>+7 (951) 686-43-36</p></li>
             <li><a href="/public/services">Order Terms</a></li>
-            <li><a href="/public/models">Models</a></li>
-            {{--            <li><a href="/public/modelsVip">Vip Зал/Vip Hall</a></li>--}}
+            <li><a href="/public/EnModels">Models</a></li>
+{{--            <li><a href="/public/modelsVip">Vip Hall</a></li>--}}
             <li><a href="/public/price">Price</a></li>
-            <li><a href="/public/vacancy">Jobs</a></li>
-            <li><a href="/public/contacts">Contact</a></li>
+            <li><a href="/public/EnVacancy">Jobs</a></li>
+            <li><a href="/public/EnContacts">Contact</a></li>
             <li><a href="/public/about">About Us</a></li>
         </ul>
     </div>

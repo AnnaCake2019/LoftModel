@@ -60,7 +60,7 @@ header ul {
 }
 
 header ul a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -220,7 +220,7 @@ footer .threeBlock {
 
 @media screen and (max-width: 1100px) {
   header ul a {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   header p {
@@ -240,7 +240,7 @@ footer .threeBlock {
   }
 
   header ul a {
-    font-size: 9px;
+    font-size: 13px;
   }
 
   header p {
@@ -1588,5 +1588,38 @@ footer .threeBlock {
 
 .enHere {
   display: block;
+}
+
+.lang {
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.lang div {
+  display: block;
+  margin-top: 30px;
+}
+
+.lang img {
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.lang img:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 362px) {
+  .lang {
+    width: 50px;
+  }
+
+  .lang div {
+    width: 70px;
+  }
 }
 

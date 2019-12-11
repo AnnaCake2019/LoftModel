@@ -34,40 +34,39 @@
                                 </div>
                             @endif
                             <div>
-                                <p>Возраст / Age </p>
+                                <p>Возраст</p>
                                 <p>{{$model->age}}</p>
                             </div>
                             <div>
-                                <p>Рост / Height </p>
+                                <p>Рост</p>
                                 <p>{{$model->height}}</p>
                             </div>
                             <div>
-                                <p>Вес / Weight </p>
+                                <p>Вес</p>
                                 <p>{{$model->weight}}</p>
                             </div>
                             <div>
-                                <p>Параметры / Options </p>
+                                <p>Параметры</p>
                                 <p>{{$model->parameters}}</p>
                             </div>
                             <div>
-                                <p>Грудь / Chest </p>
+                                <p>Грудь</p>
                                 <p>{{$model->chest}}</p>
                             </div>
                             <div>
-                                <p>Город / City </p>
+                                <p>Город</p>
                                 <p>{{$model->city}}</p>
                             </div>
                             <div>
-                                <p>Страна / Country </p>
+                                <p>Страна</p>
                                 <p>{{$model->country}}</p>
                             </div>
                             <div class="followersInst">
-                                <p>Подписчиков в Instagram <br/>
-                                    Instagram Followers</p>
+                                <p>Подписчиков в Instagram</p>
                                 <p>{{$model->followers}}</p>
                             </div>
                             <div class="states">
-                                <h4 class="state">Статус / Status</h4>
+                                <h4 class="state">Статус</h4>
                                 <h4>{{$model->achievements}}</h4>
                             </div>
                         </div>

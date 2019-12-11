@@ -14,15 +14,28 @@
 use Illuminate\Support\Facades\DB;
 
 Route::get('/', 'FrontController@index');
+
 Route::get('/models', 'FrontController@models');
+Route::get('/EnModels', 'FrontController@EnModels');
+
 Route::get('/modelsVip', 'FrontController@modelsVip');
 Route::get('/price', 'FrontController@price');
 Route::get('/services', 'FrontController@services');
+
 Route::get('/showModel/{id}', 'FrontController@showModel');
+Route::get('/EnShowModel/{id}', 'FrontController@EnShowModel');
+
+
+
 Route::get('/showModelVip/{id}', 'FrontController@showModelVip');
 Route::get('/about', 'FrontController@about');
+
 Route::get('/vacancy', 'FrontController@vacancy');
+Route::get('/EnVacancy', 'FrontController@EnVacancy');
+
 Route::get('/contacts', 'FrontController@contacts');
+Route::get('/EnContacts', 'FrontController@EnContacts');
+
 
 Auth::routes();
 Route::get('logout', 'Auth\LoginController@logout');

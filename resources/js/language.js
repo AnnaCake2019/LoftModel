@@ -8,17 +8,16 @@ let swi;
 
 ru.addEventListener('click', (e) =>{
     localStorage.clear();
-    localStorage.setItem('ru', ru.value);
+    localStorage.setItem('ru', 'ru');
     console.log(localStorage.getItem('ru'));
-    location.reload();
+    location.href = 'http://loftmodel/public/';
 });
 
 en.addEventListener('click', (e) =>{
     localStorage.clear();
-    localStorage.setItem('en', en.value);
+    localStorage.setItem('en', 'en');
     console.log(localStorage.getItem('en'));
-    location.reload();
-
+    location.href = 'http://loftmodel/public/';
 });
 
 if (localStorage.getItem('ru')){
@@ -38,9 +37,9 @@ if (localStorage.getItem('ru')){
 
 }
 if (localStorage.getItem('en')){
-    en.setAttribute('checked', '')
+    en.setAttribute('checked', '');
     for (let i = 0 ; i < styleRu.length; i++){
-        console.log(styleRu[i])
+        console.log(styleRu[i]);
         styleRu[i].classList.add('ruNon');
         styleRu[i].classList.remove('ruHere');
     }

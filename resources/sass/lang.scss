@@ -11,3 +11,30 @@
 .enHere{
     display: block;
 }
+
+.lang{
+    justify-content: space-evenly;
+    div{
+        display: block;
+        margin-top: 30px;
+    }
+
+    img{
+       cursor: pointer;
+        transition: 1s;
+        &:hover{
+            transition: 1s;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 362px){
+    .lang{
+        width: 50px;
+        div{
+         width: 70px;
+        }
+    }
+}

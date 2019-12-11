@@ -100,15 +100,15 @@ var styleEn = document.getElementsByClassName('en');
 var swi;
 ru.addEventListener('click', function (e) {
   localStorage.clear();
-  localStorage.setItem('ru', ru.value);
+  localStorage.setItem('ru', 'ru');
   console.log(localStorage.getItem('ru'));
-  location.reload();
+  location.href = 'http://loftmodel/public/';
 });
 en.addEventListener('click', function (e) {
   localStorage.clear();
-  localStorage.setItem('en', en.value);
+  localStorage.setItem('en', 'en');
   console.log(localStorage.getItem('en'));
-  location.reload();
+  location.href = 'http://loftmodel/public/';
 });
 
 if (localStorage.getItem('ru')) {

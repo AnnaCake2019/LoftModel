@@ -4,8 +4,7 @@
     <div class="container">
         <div class="row contact contDown" id="cont">
             <div class="col-md-12 tel">
-                <p class="TableOfContents">КОНТАКТЫ</p>
-                <p class="TableOfContentsTwo">По любым вопросам обращаться по телефону:</p>
+                <p class="TableOfContents">CONTACTS</p>
                 <p class="telInto">+7 (951) 686-43-36</p>
             </div>
             <div class="col-md-12 soc">
