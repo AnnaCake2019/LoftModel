@@ -9,22 +9,22 @@ use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
 {
-    public function menu(){
+    public function Menu(){
         return view('admin.menu');
     }
 
-    public function modelsA(){
+    public function ModelsA(){
 
         return view('admin.modelsA');
     }
 
-    public function albumA()
+    public function AlbumA()
     {
         $models = DB::table('models')->get();
         return view('admin.albumA', compact('models'));
     }
 
-    public function adminModel($id)
+    public function AdminModel($id)
     {
         $model = DB::table('models')->find($id);
         return view('admin.adminModel', compact('model'));
@@ -41,7 +41,7 @@ class AdminController extends Controller
 
 
 
-    public function delete(Request $request){
+    public function Delete(Request $request){
         $id = $request->get('id');
         $path1 = $request->get('main_photo');
         $path2 = $request->get('one_photo');
@@ -53,16 +53,16 @@ class AdminController extends Controller
         DB::delete('delete from `models` where id = ?',[$id]);
         Storage::delete(['/public/' . $path1, '/public/' . $path2, '/public/' . $path3, '/public/' . $path4, '/public/' . $path5, '/public/' . $path6, '/public/' . $path7]);
         echo "Record deleted successfully.<br/>";
-        echo '<a href="/public/admin/albumA">Click Here</a> to go back.';
+        echo '<a href="/public/Admin/AlbumA">Click Here</a> to go back.';
     }
 
 
 
-    public function modelsAV(){
+    public function ModelsAV(){
         return view('admin.modelsAV');
     }
 
-    public function update(Request $request)
+    public function Update(Request $request)
     {
         $this->validate($request, [
             'main_photo' => 'required ',

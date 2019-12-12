@@ -44,7 +44,7 @@ if (localStorage.getItem('en')){
         styleRu[i].classList.remove('ruHere');
     }
     for (let i = 0 ; i < styleEn.length; i++){
-        console.log(styleEn[i])
+        console.log(styleEn[i]);
         styleEn[i].classList.add('enHere');
         styleEn[i].classList.remove('enNon');
     }

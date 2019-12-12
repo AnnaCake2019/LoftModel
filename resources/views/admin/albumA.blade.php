@@ -1,7 +1,7 @@
 @extends('adminStart')
 
 @section('content')
-    <a class="back" href="/public/admin/modelsA"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+    <a class="back" href="/public/Admin/ModelsA"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
     <p id="sumModels"></p>
     <div class="container">
         <div class="row">
@@ -11,9 +11,9 @@
                 @foreach($models as $model)
                     <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12 for_model_admin cont_for_models">
 {{--                        <a class="del" href="/public/admin/destroy/{{$model->id}}">X</a>--}}
-                        <a class="link_model" href="/public/admin/adminModel/{{$model->id}}">{{$model->name}}</a>
+                        <a class="link_model" href="/public/Admin/AdminModel/{{$model->id}}">{{$model->name}}</a>
                         <div class="cont_for_model">
-                            <a href="/public/admin/adminModel/{{$model->id}}">
+                            <a href="/public/Admin/AdminModel/{{$model->id}}">
                                 <img src="{{ asset('/storage/' . $model->main_photo) }}">
                                 <div class="info_model">
                                     <p>Возраст/Age: {{$model->age}}</p>
@@ -24,7 +24,7 @@
                             </a>
                         </div>
                         <div>
-                            <form action="delete" method="get" enctype="multipart/form-data">
+                            <form action="Delete" method="get" enctype="multipart/form-data">
                                 {{ csrf_field() }}
                                 <input style="display: none;" type="text" name="id" value="{{$model->id}}">
                                 <input style="display: none;" type="text" name="main_photo" value="{{$model->main_photo}}">

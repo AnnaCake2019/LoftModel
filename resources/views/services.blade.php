@@ -6,39 +6,29 @@
         <div class="disNonWin" id="modWin">
             <i class="fa fa-times-circle closeServer" id="closeServerWin" aria-hidden="true"></i>
             <div class="headForm">
-                <h4>Анкета для персонального кастинга<br/>
-                    Application for personal casting</h4>
+                <h4>Анкета для персонального кастинга</h4>
             </div>
             <form action="#" method="post" name="services">
                 <div>
-                    <label>Укажите страну встречи с моделью <br/>
-                        Specify the country of the model
+                    <label>Укажите страну встречи с моделью
                     </label><input class="valid" required
-                                   placeholder="Страна / Country" maxlength="10" id="Country" type="text">
-{{--                    <p class="answerCountry"></p>--}}
+                                   placeholder="Страна" maxlength="10" id="Country" type="text">
                 </div>
                 <div>
 
-                    <label>Укажите город встречи с моделью <br/>
-                        Indicate the city of the meeting with the model
-                    </label>
+                    <label>Укажите город встречи с моделью</label>
                     <input class="valid" required
-                           placeholder="Город / City" maxlength="20" id="City" type="text">
-{{--                    <p class="answerCity"></p>--}}
+                           placeholder="Город" maxlength="20" id="City" type="text">
                 </div>
                 <div>
-                    <label>Дата встречи<br/>
-                        Date of meeting
+                    <label>Дата встречи
                     </label>
                     <input  required
                             id="Date" type="date">
                 </div>
                 <div>
-                    <label>Укажите примерный бюджет заказа в $ <br/>
-                        Indicate approximate order budget in $
-                    </label>
-                    <input maxlength="7" placeholder="Бюджет / Budget" id="Money" type="text">
-{{--                    <p class="answerBudget"></p>--}}
+                    <label>Укажите примерный бюджет заказа в $</label>
+                    <input maxlength="7" placeholder="Бюджет" id="Money" type="text">
                 </div>
                 <div>
                     <button id="but" type="submit">
@@ -65,7 +55,7 @@
                     <p>
                         Для подбора спутницы есть 2 варианта:<br/>
                         1. <a id="linkOW" href="#">Персональный онлайн кастинг</a><br/>
-                        2. <a href="/public/models">Выбрать модели из каталога</a><br/>
+                        2. <a href="/public/Models">Выбрать модели из каталога</a><br/>
                         Более подробная информация у администратора
                         <a href="https://wa.me/79190477597?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5,%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B0%D1%8F%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F%20%D0%BF%D0%BE%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%D0%BC%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0.">
                             WhatsApp

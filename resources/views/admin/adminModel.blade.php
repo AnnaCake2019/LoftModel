@@ -1,7 +1,7 @@
 @extends('adminStart')
 
 @section('content')
-    <a class="back" href="/public/admin/albumA"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+    <a class="back" href="/public/Admin/AlbumA"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
 
     <div id="contForPhotoModel">
         <i class="fa fa-times-circle noneCloseImg closeImg" id="closeImg" aria-hidden="true"></i>

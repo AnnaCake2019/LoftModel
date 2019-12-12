@@ -739,6 +739,23 @@ footer .threeBlock {
   transition: 1s;
 }
 
+.alb {
+  color: black;
+  font-size: 2rem;
+  position: fixed;
+  top: 30px;
+  left: 10px;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.alb:hover {
+  color: #4f424c;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 #sumModels {
   position: fixed;
   font-size: 2rem;
@@ -937,7 +954,7 @@ footer .threeBlock {
 }
 
 .serv .ofer_inf a {
-  color: #6f42c1;
+  color: blue;
   font-weight: bold;
   text-decoration: none;
   -webkit-transition: 1s;

@@ -11,13 +11,13 @@
                         Where will we go?
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="admin/modelsA">Hall Models</a>
+                        <a class="nav-link active" href="Admin/ModelsA">Hall Models</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="admin/modelsAV">Hall Vip Models</a>
+                        <a class="nav-link" href="Admin/ModelsAV">Hall Vip Models</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" id="album" href="admin/albumA">Album</a>
+                    <a class="nav-link" id="album" href="Admin/AlbumA">Album</a>
                     </li>
                 </ul>
             </div>

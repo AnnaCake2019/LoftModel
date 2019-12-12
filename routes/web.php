@@ -15,44 +15,53 @@ use Illuminate\Support\Facades\DB;
 
 Route::get('/', 'FrontController@index');
 
-Route::get('/models', 'FrontController@models');
+Route::get('/Models', 'FrontController@models');
 Route::get('/EnModels', 'FrontController@EnModels');
 
-Route::get('/modelsVip', 'FrontController@modelsVip');
-Route::get('/price', 'FrontController@price');
-Route::get('/services', 'FrontController@services');
+Route::get('/ModelsVip', 'FrontController@modelsVip');
 
-Route::get('/showModel/{id}', 'FrontController@showModel');
+Route::get('/Price', 'FrontController@price');
+Route::get('/EnPrice', 'FrontController@EnPrice');
+
+
+Route::get('/Services', 'FrontController@services');
+Route::get('/EnServices', 'FrontController@EnServices');
+
+
+Route::get('/ShowModel/{id}', 'FrontController@showModel');
 Route::get('/EnShowModel/{id}', 'FrontController@EnShowModel');
 
 
 
-Route::get('/showModelVip/{id}', 'FrontController@showModelVip');
-Route::get('/about', 'FrontController@about');
+Route::get('/ShowModelVip/{id}', 'FrontController@showModelVip');
 
-Route::get('/vacancy', 'FrontController@vacancy');
+Route::get('/About', 'FrontController@about');
+Route::get('/EnAbout', 'FrontController@EnAbout');
+
+
+Route::get('/Vacancy', 'FrontController@vacancy');
 Route::get('/EnVacancy', 'FrontController@EnVacancy');
 
-Route::get('/contacts', 'FrontController@contacts');
+Route::get('/Contacts', 'FrontController@contacts');
 Route::get('/EnContacts', 'FrontController@EnContacts');
 
 
 Auth::routes();
-Route::get('logout', 'Auth\LoginController@logout');
+Route::get('Logout', 'Auth\LoginController@logout');
 // запрет регистрации
 //Route::match(['GET', 'POST'], 'register', function()
 //{
 //    return redirect('/');
 //});
-Route::get('/home', 'HomeController@index')->name('home');
-Route::prefix('admin')->middleware('auth')->group(function (){
+Route::get('/Home', 'HomeController@index')->name('home');
+Route::prefix('Admin')->middleware('auth')->group(function (){
     Route::get('/', 'AdminController@menu');
-    Route::get('/modelsA', 'AdminController@modelsA');
-    Route::get('/albumA', 'AdminController@albumA');
-    Route::get('/modelsAV', 'AdminController@modelsAV');
-    Route::get('/adminModel/{id}', 'AdminController@adminModel');
-    Route::post('/save', 'AdminController@update');
-    Route::get('/delete','AdminController@delete');
+    Route::get('/ModelsA', 'AdminController@modelsA');
+    Route::get('/AlbumA', 'AdminController@albumA');
+    Route::get('/ModelsAV', 'AdminController@modelsAV');
+    Route::get('/AdminModel/{id}', 'AdminController@adminModel');
+    Route::post('/Save', 'AdminController@update');
+    Route::get('/Delete','AdminController@delete');
 
 });
 

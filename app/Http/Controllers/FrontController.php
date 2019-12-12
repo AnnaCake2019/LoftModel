@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 use DB;
 class FrontController extends Controller
 {
-    public function index(){
+    public function Index(){
         return view('index', ['test' => 'test123445']);
     }
 
-    public function models()
+    public function Models()
     {
         $models = DB::table('models')->get();
         return view('models', compact('models'));
@@ -22,27 +22,42 @@ class FrontController extends Controller
         return view('EnModels', compact('models'));
     }
 
-    public function modelsVip()
+    public function ModelsVip()
     {
         return view('modelsVip', ['modelsVip' => 'modelsVip']);
     }
 
-    public function price()
+    public function Price()
     {
         return view('price', ['price' => 'price']);
     }
 
-    public function about()
+    public function EnPrice()
+    {
+        return view('EnPrice', ['price' => 'price']);
+    }
+
+    public function About()
     {
         return view('about', ['about' => 'about']);
     }
 
-    public function services()
+    public function EnAbout()
+    {
+        return view('EnAbout', ['about' => 'about']);
+    }
+
+    public function Services()
     {
         return view('services', ['services' => 'services']);
     }
 
-    public function showModel($id)
+    public function EnServices()
+    {
+        return view('EnServices', ['services' => 'services']);
+    }
+
+    public function ShowModel($id)
     {
         $model = DB::table('models')->find($id);
         return view('showModel', compact('model'));
@@ -54,12 +69,12 @@ class FrontController extends Controller
         return view('EnShowModel', compact('model'));
     }
 
-    public function showModelVip()
+    public function ShowModelVip()
     {
         return view('showModelVip', ['showModelVip' => 'showModelVip']);
     }
 
-    public function vacancy()
+    public function Vacancy()
     {
         return view('vacancy', ['vacancy' => 'vacancy']);
     }
@@ -70,7 +85,7 @@ class FrontController extends Controller
     }
 
 
-    public function contacts()
+    public function Contacts()
     {
         return view('contacts', ['contacts' => 'contacts']);
     }

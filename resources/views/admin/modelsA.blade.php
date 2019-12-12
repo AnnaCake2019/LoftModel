@@ -1,12 +1,13 @@
 @extends('admin.menu')
 @section('content')
-    <a class="back" href="/public/admin"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+    <a class="back" href="/public/Admin"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
+    <a class="alb" href="/public/Admin/AlbumA">Album</a>
 
 
     <div class="container">
         <div class="row">
             <div class="offset-1 col-6">
-                <form class="formModels" action="save" method="post" enctype="multipart/form-data">
+                <form class="formModels" action="Save" method="post" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     @if ($errors->any())
                         <div class="alert alert-danger">
@@ -47,6 +48,5 @@
             </div>
         </div>
     </div>
-    <a id="albumA" href="/public/admin/albumA">Album</a>
     <script src="/public/js/admin/app.js"></script>
 @endsection

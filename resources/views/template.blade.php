@@ -36,22 +36,22 @@
         </div>
         <nav>
             <ul class="ru">
-                <li class="menuPC"><a href="/public/services">Условия Заказа</a></li>
-                <li class="menuPC"><a href="/public/models">Модели</a></li>
-{{--                <li class="menuPC"><a href="/public/modelsVip">Vip Зал</a></li>--}}
-                <li class="menuPC"><a href="/public/price">Прайс</a></li>
-                <li class="menuPC"><a href="/public/vacancy">Вакансии</a></li>
-                <li class="menuPC"><a href="/public/contacts">Контакты</a></li>
-                <li class="menuPC"><a href="/public/about">О нас</a></li>
+                <li class="menuPC"><a href="/public/Services">Условия Заказа</a></li>
+                <li class="menuPC"><a href="/public/Models">Модели</a></li>
+{{--                <li class="menuPC"><a href="/public/ModelsVip">Vip Зал</a></li>--}}
+                <li class="menuPC"><a href="/public/Price">Прайс</a></li>
+                <li class="menuPC"><a href="/public/Vacancy">Вакансии</a></li>
+                <li class="menuPC"><a href="/public/Contacts">Контакты</a></li>
+                <li class="menuPC"><a href="/public/About">О нас</a></li>
             </ul>
             <ul class="en">
-                <li class="menuPC"><a href="/public/services">Order Terms</a></li>
+                <li class="menuPC"><a href="/public/EnServices">Order Terms</a></li>
                 <li class="menuPC"><a href="/public/EnModels">Models</a></li>
-{{--                <li class="menuPC"><a href="/public/modelsVip">Vip Hall</a></li>--}}
-                <li class="menuPC"><a href="/public/price">Price</a></li>
+{{--                <li class="menuPC"><a href="/public/ModelsVip">Vip Hall</a></li>--}}
+                <li class="menuPC"><a href="/public/EnPrice">Price</a></li>
                 <li class="menuPC"><a href="/public/EnVacancy">Jobs</a></li>
                 <li class="menuPC"><a href="/public/EnContacts">Contact</a></li>
-                <li class="menuPC"><a href="/public/about">About Us</a></li>
+                <li class="menuPC"><a href="/public/EnAbout">About Us</a></li>
             </ul>
         </nav>
         <span id="buttonOpenMenu" class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
@@ -59,23 +59,23 @@
     <div id="fonMenu" class="forMenuPhoneSlip">
         <ul class="ru">
             <li><p>+7 (951) 686-43-36</p></li>
-            <li><a href="/public/services">Условия Заказа</a></li>
-            <li><a href="/public/models">Модели</a></li>
-{{--            <li><a href="/public/modelsVip">Vip Зал</a></li>--}}
-            <li><a href="/public/price">Прайс</a></li>
-            <li><a href="/public/vacancy">Вакансии</a></li>
-            <li><a href="/public/contacts">Контакты</a></li>
-            <li><a href="/public/about">О нас</a></li>
+            <li><a href="/public/Services">Условия Заказа</a></li>
+            <li><a href="/public/Models">Модели</a></li>
+{{--            <li><a href="/public/ModelsVip">Vip Зал</a></li>--}}
+            <li><a href="/public/Price">Прайс</a></li>
+            <li><a href="/public/Vacancy">Вакансии</a></li>
+            <li><a href="/public/Contacts">Контакты</a></li>
+            <li><a href="/public/About">О нас</a></li>
         </ul>
         <ul class="en">
             <li><p>+7 (951) 686-43-36</p></li>
-            <li><a href="/public/services">Order Terms</a></li>
+            <li><a href="/public/EnServices">Order Terms</a></li>
             <li><a href="/public/EnModels">Models</a></li>
 {{--            <li><a href="/public/modelsVip">Vip Hall</a></li>--}}
-            <li><a href="/public/price">Price</a></li>
+            <li><a href="/public/EnPrice">Price</a></li>
             <li><a href="/public/EnVacancy">Jobs</a></li>
             <li><a href="/public/EnContacts">Contact</a></li>
-            <li><a href="/public/about">About Us</a></li>
+            <li><a href="/public/EnAbout">About Us</a></li>
         </ul>
     </div>
 </header>
@@ -116,8 +116,8 @@
             <div class="offset-3 col-6 threeBlock">
                 <p>&copy; 2019 Loft Model Agency</p>
                 @if(Auth::check())
-                    <a class="linkForAdmin" href="/public/admin">Online</a>-
-                    <a class="linkForAdmin" href="/public/logout">Logout</a>
+                    <a class="linkForAdmin" href="/public/Admin">Online</a>-
+                    <a class="linkForAdmin" href="/public/Logout">Logout</a>
                 @endif
             </div>
         </div>
