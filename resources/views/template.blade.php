@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Это удобный ресурс для заказа эскорт моделей, под любые назначения и мероприятия.
+В несколько приёмов вы можете выбрать себе спутницу для: Встречи на своих условиях, поездок в другие города и страны,
+ организации вечеринок, создания положительной атмосферы любого мероприятия, подбора невесты, переводчицы, и тд .">
+    <meta name="keywords" content="Эскорт, модели, модели по всему миру, vip, жены, любовницы, любовница, встречи,
+    escort, models, models around the world, vip, wives, lovers, lover, meeting">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/public/images/icons.png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
