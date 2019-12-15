@@ -18,7 +18,7 @@
                     <a href="https://vk.com/id463375512" title="VK"><i class="fab fa-vk vk"></i></a>
                 </div>
                 <div>
-                    <a href="https://wa.me/79190477597?text=" title="WhatsApp"><i class="fab fa-whatsapp wats"></i></a>
+                    <a href="https://wa.me/79516864336?text=" title="WhatsApp"><i class="fab fa-whatsapp wats"></i></a>
                 </div>
             </div>
         </div>
