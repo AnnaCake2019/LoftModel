@@ -21,7 +21,7 @@
     },
     "dependencies": {
         "croppie": "^2.6.4",
-        "node-sass": "^4.13.0",
+        "node-sass": "^7.0.0",
         "slick-carousel": "^1.8.1",
         "uikit": "^3.2.3"
     }
